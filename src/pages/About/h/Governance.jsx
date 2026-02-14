@@ -11,7 +11,7 @@ import {
   UserCheck, 
   Award,
   BookOpen
-} from "lucide-react"; // Assuming Lucide-React is used for icons mgt
+} from "lucide-react"; // Assuming Lucide-React is used for icons
 import Footer from "../../components/layout/Footer";
 import heroGovernance from "../../assets/images/heroes/governance-hero.jpg";
 import { fadeUp, stagger } from "../../animations/variants";

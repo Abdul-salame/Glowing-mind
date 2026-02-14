@@ -9,11 +9,6 @@ import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
 
 // ABOUT
-import Identity from "./pages/about/Identity";
-//import WhyWeExist from "./pages/about/WhyWeExist";
-import VisionMission from "./pages/about/VisionMission";
-import Team from "./pages/about/Team";
-import Governance from "./pages/about/Governance";
 
 // WHAT WE DO
 import ThematicAreas from "./pages/what-we-do/ThematicAreas";
@@ -62,6 +57,10 @@ import SIWES from "./pages/get-involved/SiwesNysc";
 import HireTalent from "./pages/get-involved/HireTalent";
 import Community from "./pages/get-involved/Community";
 import DonateForm from "./pages/get-involved/DonateForm";
+import VisionMission from "./pages/about/VisionMission";
+import Team from "./pages/about/Team";
+import Governance from "./pages/about/Governance";
+import Identity from "./pages/about/Identity";
 import WhyWeExist from "./pages/about/WhyWeExist";
 
 export default function App() {
