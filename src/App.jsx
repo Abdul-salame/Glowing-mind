@@ -10,7 +10,7 @@ import BlogPost from "./pages/BlogPost";
 
 // ABOUT
 //import Identity from "./pages/about/Identity";
-import Identity from './pages/about/Identity'
+//import Identity from './pages/about/Identity'
 import WhyWeExist from "./pages/about/WhyWeExist";
 import VisionMission from "./pages/about/VisionMission";
 import Team from "./pages/about/Team";
@@ -76,7 +76,10 @@ export default function App() {
         <Route path="/blog/:id" element={<BlogPost />} />
 
         {/* ABOUT */}
+        {/**
+         * 
         <Route path="/about/identity" element={<Identity />} />
+         */}
         <Route path="/about/why-we-exist" element={<WhyWeExist />} />
         <Route path="/about/vision-mission" element={<VisionMission />} />
         <Route path="/about/team" element={<Team />} />
