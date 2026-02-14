@@ -10,7 +10,7 @@ import BlogPost from "./pages/BlogPost";
 
 // ABOUT
 import Identity from "./pages/about/Identity";
-import WhyWeExist from "./pages/about/WhyWeExist";
+//import WhyWeExist from "./pages/about/WhyWeExist";
 import VisionMission from "./pages/about/VisionMission";
 import Team from "./pages/about/Team";
 import Governance from "./pages/about/Governance";
