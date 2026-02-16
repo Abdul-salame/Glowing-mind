@@ -8,7 +8,7 @@ import { fadeUp, stagger } from "../../animations/variants";
 export default function VisionMission() {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col">
-      {/* HERO SECTION jhgfg*/}
+      {/* HERO SECTION */}
       <div
         className="relative h-[420px] bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url(${heroVision})` }}
