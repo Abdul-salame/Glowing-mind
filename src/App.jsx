@@ -60,9 +60,9 @@ import DonateForm from "./pages/get-involved/DonateForm";
 import VisionMission from "@/pages/about/VisionMission.jsx";
 
 import Team from "@/pages/about/Team";
-import Governance from "./pages/about/Governance";
-import Identity from "./pages/about/Identity";
-import WhyWeExist from "./pages/about/WhyWeExist";
+import Governance from "@/pages/about/Governance";
+import Identity from "@/pages/about/Identity";
+import WhyWeExist from "@/pages/about/WhyWeExist";
 
 export default function App() {
   return (
