@@ -14,7 +14,7 @@ import {
   LineChart,
   Briefcase
 } from "lucide-react";
-import Footer from "../../../components/layout/Footer";
+import Footer from "../../components/layout/Footer";
 import heroImage from "../../assets/images/why-we-exist-hero.jpg";
 
 const fadeUp = {

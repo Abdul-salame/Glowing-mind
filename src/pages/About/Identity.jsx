@@ -1,9 +1,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Footer from "../../../components/layout/Footer";
+import Footer from "../../components/layout/Footer";
 import heroIdentity from "../../assets/images/heroes/identity-hero.jpg";
-import { fadeUp, stagger } from "../../../animations/variants";
+import { fadeUp, stagger } from "../../animations/variants";
 
 //  SVG Icon
 const IconWrapper = ({ children }) => (
