@@ -9,7 +9,7 @@ import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
 
 // ABOUT
-import VisionMission from "@/pages/about/VisionMission.jsx";
+import VisionMission from "@/pages/about/VisionMission";
 import Team from "@/pages/about/Team";
 import Governance from "@/pages/about/Governance";
 import Identity from "@/pages/about/Identity";
