@@ -9,11 +9,11 @@ import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
 
 // ABOUT
-import VisionMission from "@/pages/about/VisionMission.jsx";
-import Team from "@/pages/about/Team.jsx";
-import Governance from "@/pages/about/Governance.jsx";
-import Identity from "@/pages/about/Identity.jsx";
-import WhyWeExist from "@/pages/about/WhyWeExist.jsx";
+import VisionMission from "./pages/about/VisionMission.jsx";
+import Team from "./pages/about/Team.jsx";
+import Governance from "./pages/about/Governance.jsx";
+import Identity from "./pages/about/Identity.jsx";
+import WhyWeExist from "./pages/about/WhyWeExist.jsx";
 
 
 // WHAT WE DO
