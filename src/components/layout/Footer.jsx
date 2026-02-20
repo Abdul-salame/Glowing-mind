@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
 
-        {/* MIDDLE COLUMN – QUICK LINKS */}
+        {/*  QUICK LINKS */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
 
