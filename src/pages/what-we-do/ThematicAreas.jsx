@@ -10,10 +10,10 @@ import {
   Gavel, 
   CheckCircle2, 
   Globe2,
-  Network // Added for the new section
+  Network 
 } from "lucide-react";
 import Footer from "../../components/layout/Footer";
-import hero from "../../assets/images/heroes/thematic-areas.jpg";
+
 
 const areas = [
   {
@@ -37,7 +37,7 @@ const areas = [
       "Empowering young people to lead climate solutions by building green skills and supporting climate entrepreneurship. We promote inclusive participation in sustainable development initiatives.",
     points: ["Green Skills", "Circular Economy", "Environmental Stewardship"]
   },
-  // NEW THEMATIC AREA ADDED BELOW
+  
   {
     title: "Community Building & Opportunities Sharing",
     icon: <Network className="w-8 h-8 text-blue-600" />,
@@ -67,7 +67,7 @@ export default function ThematicAreas() {
       {/* hero section*/}
       <section
         className="pt-40 pb-28 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${hero})` }}
+        style={{ backgroundImage: `url(/images/hero-thematic-areas.jpg)` }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
         <div className="relative max-w-6xl mx-auto px-6 text-white">
@@ -98,7 +98,7 @@ export default function ThematicAreas() {
       {/*content section */}
       <section className="py-24 flex-grow">
         <div className="max-w-7xl mx-auto px-6">
-          {/* Changed grid to handle 6 items evenly (3 per row on desktop) */}
+          {/* C */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {areas.map((area, index) => (
               <motion.div

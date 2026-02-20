@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { page, fadeUp, stagger } from "../../animations/variants";
-import donateImg from "../../assets/images/GetInvolved/donate.jpg";
+
 import Footer from "../../components/layout/Footer";
 
 
@@ -11,32 +11,19 @@ export default function Donate() {
 
   return (
     <>
-    <motion.main
-      variants={page}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      className="pt-28 pb-20"
-    >
+    <motion.main variants={page} initial="initial" animate="animate" exit="exit" className="pt-28 pb-20">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div variants={stagger} initial="hidden" animate="show">
-          
-          {/* Page Title */}
-          <motion.h1
-            variants={fadeUp}
-            className="text-4xl font-bold text-blue-800 mb-8"
-          >
+          <motion.h1 variants={fadeUp} className="text-4xl font-bold text-blue-800 mb-8">
             Invest in the Future of African Youth
           </motion.h1>
 
-          {/* Banner */}
           <motion.img
             variants={fadeUp}
-            src={donateImg}
+            src="/images/GetInvolved/donate.jpg"
             className="w-full h-72 object-cover rounded-xl shadow mb-10"
             alt="Support GMI"
           />
-
           {/* Content */}
           <motion.div
             variants={fadeUp}
@@ -100,7 +87,7 @@ export default function Donate() {
             </p>
           </motion.div>
 
-          {/* Donate Now Button (REDIRECT) */}
+          {/* Donate Now Button */}
           <motion.div variants={fadeUp} className="mt-16 text-center">
             <button
               onClick={() => navigate("/get-involved/donate/form")}

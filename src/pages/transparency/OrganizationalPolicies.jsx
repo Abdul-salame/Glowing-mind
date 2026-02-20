@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { page, fadeUp, stagger } from "../../animations/variants";
-import policiesImg from "../../assets/images/transparency/policies.jpg";
+
   import Footer from "../../components/layout/Footer"; 
 
 export default function OrganizationalPolicies() {
@@ -71,7 +71,7 @@ export default function OrganizationalPolicies() {
 
           <motion.img
             variants={fadeUp}
-            src={policiesImg}
+            src="/images/hero-policies.jpg"
             className="w-full h-80 object-cover rounded-xl shadow mb-12"
             alt="GMI Governance Framework"
           />

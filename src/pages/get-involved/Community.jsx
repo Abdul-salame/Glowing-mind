@@ -9,7 +9,7 @@ import {
   Lightbulb 
 } from "lucide-react";
 import { page, fadeUp, stagger } from "../../animations/variants";
-import communityImg from "../../assets/images/GetInvolved/community.jpg";
+
 import Footer from "../../components/layout/Footer";
 
 export default function Community() {
@@ -24,7 +24,7 @@ export default function Community() {
 
           <motion.img 
             variants={fadeUp} 
-            src={communityImg} 
+            src="/images/GetInvolved/community.jpg" 
             className="w-full h-80 object-cover rounded-2xl shadow-lg mb-12" 
             alt="GMI Community Gathering" 
           />

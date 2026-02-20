@@ -3,13 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Globe } from "lucide-react"; 
 import Footer from "../../components/layout/Footer";
-import hero from "../../assets/images/heroes/sdg-hero.jpg";
-
-import sdg1Img from "../../assets/images/sdgs/sdg1.png";
-import sdg4Img from "../../assets/images/sdgs/sdg4.png";
-import sdg8Img from "../../assets/images/sdgs/sdg8.png";
-import sdg13Img from "../../assets/images/sdgs/sdg13.png";
-import sdg17Img from "../../assets/images/sdgs/sdg17.png";
 
 const sdgSections = [
   {
@@ -17,7 +10,7 @@ const sdgSections = [
     title: "NO POVERTY",
     tagline: "We equip people living in underserved communities with the necessary skills that can help them earn income and live better lives.",
     desc: "Glowing Minds Initiative For Human Development aims to end poverty in all its forms everywhere. Our objectives include ensuring that the entire population and especially the poorest and most vulnerable have equal rights to economic resources, access to basic services, property and land control, natural resources and new technologies.",
-    image: sdg1Img,
+    image: "/images/sdg1.png",
     reverse: false
   },
   {
@@ -25,7 +18,7 @@ const sdgSections = [
     title: "QUALITY EDUCATION",
     tagline: "We are committed to improving quality education by building schools and improving the learning experience of children across Africa.",
     desc: "We are committed to fostering an environment that strives to guarantee universal access to comprehensive, fair, and high-quality education, while concurrently advocating for the facilitation of continual learning opportunities throughout one's entire life.",
-    image: sdg4Img,
+    image: "/images/sdg4.png",
     reverse: true
   },
   {
@@ -33,7 +26,7 @@ const sdgSections = [
     title: "DECENT WORK AND ECONOMIC GROWTH",
     tagline: "We Promote inclusive and sustainable economic growth, employment and decent work for all.",
     desc: "Glowing Minds Initiative For Human Development ensured Sustained and inclusive economic growth can drive progress, create decent jobs for all and improve living standards. COVID-19 has disrupted billions of lives and endangered the global economy.",
-    image: sdg8Img,
+    image: "/images/sdg8.png",
     reverse: false
   },
   {
@@ -41,7 +34,7 @@ const sdgSections = [
     title: "CLIMATE ACTION",
     tagline: "Climate change is affecting every country on every continent. It is disrupting national economies and affecting lives.",
     desc: "Glowing Minds Initiative For Human Development sees Saving lives and livelihoods requires urgent action to address both the pandemic and the climate emergency. There by we start what is call 'Waste to wealth.'",
-    image: sdg13Img,
+    image: "/images/sdg13.png",
     reverse: true
   },
   {
@@ -49,7 +42,7 @@ const sdgSections = [
     title: "PARTNERSHIP FOR GOALS",
     tagline: "We join to strengthen the means of implementation of SDGs by partnership.",
     desc: "Ensure strengthening and streamlining cooperation between nation-states, both developed and developing, using the SDGs as a shared framework and a shared vision for defining that collaborative way forward.",
-    image: sdg17Img,
+    image: "/images/sdg17.png",
     reverse: false
   }
 ];
@@ -60,7 +53,7 @@ export default function SDGAlignment() {
       {/* hero*/}
       <section 
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
-        style={{ backgroundImage: `url(${hero})` }}
+        style={{ backgroundImage: `url(/images/hero-sdg.jpg)` }}
       >
 
         <div className="absolute inset-0 bg-slate-900/60 z-0" />

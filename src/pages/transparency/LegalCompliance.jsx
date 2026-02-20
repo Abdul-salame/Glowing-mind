@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { page, fadeUp, stagger } from "../../animations/variants";
-import legalImg from "../../assets/images/transparency/legal.jpg";
+
 import Footer from "../../components/layout/Footer";
 
 export default function LegalCompliance() {
@@ -32,7 +32,7 @@ export default function LegalCompliance() {
 
           <motion.img
             variants={fadeUp}
-            src={legalImg}
+            src="/images/hero-legal.jpg"
             alt="GMI Legal Status"
             className="w-full h-80 object-cover rounded-xl shadow mb-10"
           />

@@ -4,8 +4,6 @@ import { page, fadeUp, stagger } from "../../animations/variants";
 import CTAButtons from "../../components/common/CTAButtons";
 import Footer from "../../components/layout/Footer";
 
-import success1 from "../../assets/images/impact/success-1.jpg";
-import success2 from "../../assets/images/impact/success-2.jpg";
 
 /* ===============================
    Impact Stats Component
@@ -46,14 +44,14 @@ export default function SuccessStories() {
   const stories = [
     {
       name: "Yusuf Amina",
-      image: success1,
+      image: "/images/impact/success-1.jpg",
       role: "Job Placement Success",
       description:
         "Amina joined the GMI community in November 2024 as a Corp Member after attending the Future Focus Conference at Nile University. By May 2025, following a recommendation by GMI to Jobberman for a Job Fair, she successfully secured employment with an ICT Firm in Abuja.",
     },
     {
       name: "Amb. Adamu Dauda",
-      image: success2,
+      image: "/images/impact/success-2.jpg",
       role: "Policy Lab Fellow & Youth Leader",
       description:
         "Adamu is a vibrant youth leader currently serving as the Councilor representing Lambata Ward in the Gurara Local Government Area of Niger State. He is a distinguished fellow of the Glowing Minds Policy Lab for Youth Leaders, where he contributes to regional policy development.",

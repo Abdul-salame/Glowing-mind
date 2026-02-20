@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import Footer from "../../components/layout/Footer";
-import hero from "../../assets/images/heroes/climate.jpg";
+
 import { page, fadeUp, stagger } from "../../animations/variants";
 
 export default function YoungClimateEntrepreneurs() {
@@ -10,7 +10,7 @@ export default function YoungClimateEntrepreneurs() {
       {/* HERO SECTION */}
       <section
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
-        style={{ backgroundImage: `url(${hero})` }}
+        style={{ backgroundImage: `url(/images/hero-climate.jpg)` }}
       >
         <div className="absolute inset-0 bg-black/60" />
         <motion.div variants={fadeUp} initial="hidden" animate="show" className="relative max-w-5xl mx-auto text-center px-6">

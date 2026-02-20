@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { page, fadeUp, stagger } from "../../animations/variants";
 import { PlayCircle, FileText, Share2 } from "lucide-react";
-import newsImg from "../../assets/images/impact/news.jpg";
 import Footer from "../../components/layout/Footer";
 
 export default function GMINews() {
@@ -64,7 +63,7 @@ export default function GMINews() {
 
             <motion.img
               variants={fadeUp}
-              src={newsImg}
+              src="/images/impact/media-engagement.jpg"
               alt="GMI Media Engagement"
               className="rounded-xl shadow mb-10 h-72 w-full object-cover"
             />

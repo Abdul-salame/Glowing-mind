@@ -10,7 +10,7 @@ import {
   Target, 
   Users 
 } from "lucide-react";
-import financeImg from "../../assets/images/transparency/finance.jpg";
+
 import Footer from "../../components/layout/Footer";
 
 export default function FinancialHighlights() {
@@ -40,10 +40,10 @@ export default function FinancialHighlights() {
             </motion.p>
           </div>
 
-          {/* Hero Image with Glassmorphism Overlay */}
+          {/* Hero Image */}
           <motion.div variants={fadeUp} className="relative mb-16 ">
             <img
-              src={financeImg}
+              src="/images/hero-finance.jpg"
               className="w-full h-[400px] object-cover rounded-3xl shadow-2xl "
               alt="Financial Transparency"
             />

@@ -6,7 +6,7 @@ import {
   Scale, Lightbulb, Handshake, Heart, Award 
 } from "lucide-react";
 import Footer from "../../components/layout/Footer";
-import hero from "../../assets/images/heroes/approach-hero.jpg";
+
 
 export default function Approach() {
   const steps = [
@@ -58,7 +58,7 @@ export default function Approach() {
   return (
     <>
       
-      <section className="pt-40 pb-28 bg-cover bg-center relative text-white" style={{ backgroundImage: `url(${hero})` }}>
+      <section className="pt-40 pb-28 bg-cover bg-center relative text-white" style={{ backgroundImage: `url(/images/hero-approach.jpg)` }}>
         <div className="absolute inset-0 bg-black/60" />
         <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} className="relative max-w-5xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Our Approach & Methodology</h1>

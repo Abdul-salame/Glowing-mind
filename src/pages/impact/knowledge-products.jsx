@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { page, fadeUp, stagger } from "../../animations/variants";
-// Updated Icons to match the specific tags
 import { 
   FileText, 
   BarChart, 
@@ -68,17 +67,17 @@ export default function KnowledgeProducts() {
         <div className="max-w-7xl mx-auto px-6">
           <motion.div variants={stagger} initial="hidden" animate="show">
             
-            {/* HERO SECTION WITH CORRECTED OVERLAY STYLING */}
+            {/* HERO SECTION  */}
             <motion.div 
               variants={fadeUp} 
               className="relative rounded-xl shadow-lg mb-10 h-72 w-full overflow-hidden"
             >
               <img
-                src={knowledgeImg}
+                src="/images/impact/knowledge.jpg"
                 className="w-full h-full object-cover"
                 alt="GMI Knowledge Products"
               />
-              {/* THE CORRECTION: absolute inset-0 bg-black/60 */}
+              {/* T */}
               <div className="absolute inset-0 bg-black/60 flex items-center justify-center text-center px-4">
                 <h1 className="text-3xl md:text-4xl font-bold text-white">
                   Knowledge Products & Publications

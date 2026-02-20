@@ -9,35 +9,23 @@ import {
   Award,
 } from "lucide-react";
 import { page, fadeUp, stagger } from "../../animations/variants";
-import volunteerImg from "../../assets/images/GetInvolved/volunteer.jpg";
+
 import CTAButtons from "../../components/common/CTAButtons";
 import Footer from "../../components/layout/Footer";
 
 export default function Volunteer() {
   return (
     <>
-    <motion.main
-      variants={page}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      className="pt-28 pb-20 bg-white"
-    >
+   <motion.main variants={page} initial="initial" animate="animate" exit="exit" className="pt-28 pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div variants={stagger} initial="hidden" animate="show">
-
-          {/* Page Title */}
-          <motion.h1
-            variants={fadeUp}
-            className="text-4xl font-bold text-primary mb-8"
-          >
+          <motion.h1 variants={fadeUp} className="text-4xl font-bold text-primary mb-8">
             Volunteer / Mentor
           </motion.h1>
 
-          {/* Hero Image */}
           <motion.img
             variants={fadeUp}
-            src={volunteerImg}
+            src="/images/GetInvolved/volunteer.jpg"
             className="w-full h-80 object-cover rounded-2xl shadow-lg mb-12"
             alt="Volunteer with GMI"
           />
@@ -47,7 +35,7 @@ export default function Volunteer() {
             variants={fadeUp}
             className="text-gray-700 max-w-4xl space-y-8"
           >
-            <p className="text-lg leading-relaxed">
+              <p className="text-lg leading-relaxed">
               GMI Volunteers are experienced professionals—entrepreneurs, policy
               analysts, facilitators, and executives—who are passionate about
               service. By contributing your expertise and networks, you help

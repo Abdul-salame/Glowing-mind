@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { page, fadeUp, stagger } from "../../animations/variants";
-import partnersImg from "../../assets/images/transparency/partnerships.jpg";
+
  import Footer from "../../components/layout/Footer";
 
 
@@ -17,7 +17,7 @@ export default function Partnerships() {
 
           <motion.img
             variants={fadeUp}
-            src={partnersImg}
+            src="/images/hero-partnerships.jpg"
             className="w-full h-80 object-cover rounded-xl shadow mb-10"
             alt="GMI Collaboration"
           />

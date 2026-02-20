@@ -9,7 +9,7 @@ import {
   CheckCircle2 
 } from "lucide-react";
 import { page, fadeUp, stagger } from "../../animations/variants";
-import siwesImg from "../../assets/images/GetInvolved/siwes.jpg";
+
 import CTAButtons from "../../components/common/CTAButtons";
 import Footer from "../../components/layout/Footer";
 
@@ -17,7 +17,7 @@ import Footer from "../../components/layout/Footer";
 export default function SiwesNysc() {
   return (
     <>
-    <motion.main variants={page} initial="initial" animate="animate" exit="exit" className="pt-28 pb-20 bg-white">
+<motion.main variants={page} initial="initial" animate="animate" exit="exit" className="pt-28 pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div variants={stagger} initial="hidden" animate="show">
           <motion.h1 variants={fadeUp} className="text-4xl font-bold text-primary mb-8">
@@ -26,7 +26,7 @@ export default function SiwesNysc() {
 
           <motion.img 
             variants={fadeUp} 
-            src={siwesImg} 
+            src="/images/GetInvolved/siwes.jpg" 
             className="w-full h-80 object-cover rounded-2xl shadow-lg mb-12" 
             alt="SIWES and NYSC at GMI" 
           />

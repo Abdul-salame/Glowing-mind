@@ -8,32 +8,22 @@ import {
   Share2 
 } from "lucide-react"; 
 import { page, fadeUp, stagger } from "../../animations/variants";
-import advocateImg from "../../assets/images/GetInvolved/advocate.jpg";
+
 import Footer from "../../components/layout/Footer";
 
 export default function Advocate() {
   return (
     <>
-    <motion.main
-      variants={page}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      className="pt-28 pb-20"
-    >
+   <motion.main variants={page} initial="initial" animate="animate" exit="exit" className="pt-28 pb-20">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div variants={stagger} initial="hidden" animate="show">
-
-          <motion.h1
-            variants={fadeUp}
-            className="text-4xl font-bold text-primary mb-8"
-          >
+          <motion.h1 variants={fadeUp} className="text-4xl font-bold text-primary mb-8">
             Advocate for Change
           </motion.h1>
 
           <motion.img 
             variants={fadeUp} 
-            src={advocateImg}
+            src="/images/GetInvolved/advocate.jpg"
             className="w-full h-80 object-cover rounded-2xl shadow-lg mb-12" 
             alt="Youth Advocacy" 
           />

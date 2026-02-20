@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { page, fadeUp, stagger } from "../../animations/variants";
-import awardsImg from "../../assets/images/impact/awards.jpg";
+
 import Footer from "../../components/layout/Footer";
 
 export default function Awards() {
@@ -31,7 +31,7 @@ export default function Awards() {
 
           <motion.img
             variants={fadeUp}
-            src={awardsImg}
+            src="/images/impact/awards.jpg"
             className="rounded-xl shadow mb-10 h-72 w-full object-cover"
             alt="GMI Awards and Recognition"
           />

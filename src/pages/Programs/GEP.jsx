@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 import Footer from "../../components/layout/Footer";
-import hero from "../../assets/images/heroes/gep-hero.jpg";
+
 
 
 export default function GraduateEmployability() {
@@ -25,7 +25,7 @@ export default function GraduateEmployability() {
       {/* HERO */}
       <section
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
-        style={{ backgroundImage: `url(${hero})` }}
+        style={{ backgroundImage: `url(/images/hero-gep.jpg)` }}
       >
         <div className="absolute inset-0 bg-black/60" />
 

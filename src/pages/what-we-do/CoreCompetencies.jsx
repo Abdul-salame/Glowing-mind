@@ -9,7 +9,7 @@ import {
   CheckCircle2 
 } from "lucide-react"; 
 import Footer from "../../components/layout/Footer";
-import hero from "../../assets/images/heroes/competencies-hero.jpg";
+
 
 const competencies = [
   {
@@ -57,7 +57,7 @@ export default function CoreCompetencies() {
       
       <section
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
-        style={{ backgroundImage: `url(${hero})` }}
+        style={{ backgroundImage: `url(/images/hero-competencies.jpg)` }}
       >
         <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
         <motion.div

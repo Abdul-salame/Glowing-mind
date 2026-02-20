@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { page, fadeUp, stagger } from "../../animations/variants";
-import eventsImg from "../../assets/images/impact/events.jpg";
+
 import Footer from "../../components/layout/Footer";
 export default function AnnualEvents() {
   const events = [
@@ -41,7 +41,7 @@ export default function AnnualEvents() {
 
           <motion.img
             variants={fadeUp}
-            src={eventsImg}
+            src="/images/impact/events.jpg"
             className="rounded-xl shadow mb-10 h-72 w-full object-cover"
             alt="GMI Annual Events"
           />
