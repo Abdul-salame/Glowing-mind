@@ -27,6 +27,7 @@ const certificates = [
   "/images/certificates/cert4.png",
   "/images/certificates/cert5.png",
 ];
+
 export default function Footer() {
   return (
     <footer className="bg-blue-950 text-white">
@@ -44,7 +45,7 @@ export default function Footer() {
 
           {/* CERTIFICATES */}
           <div className="mt-6 grid grid-cols-3 sm:grid-cols-5 gap-4 items-center">
-            {[cert1, cert2, cert3, cert4, cert5].map((img, i) => (
+            {certificates.map((img, i) => (
               <div
                 key={i}
                 className="flex items-center justify-center bg-white rounded-md p-2"
@@ -58,6 +59,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
+
 
         {/* MIDDLE COLUMN – QUICK LINKS */}
         <div>

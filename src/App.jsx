@@ -30,6 +30,7 @@ import YoungClimateEntrepreneurs from "./pages/Programs/YoungClimateEntrepreneur
 import AITransition from "./pages/Programs/AITransition";
 import PolicyLab from "./pages/Programs/PolicyLab";
 import GMIHub from "./pages/Programs/GMIHub";
+import ProgramsLanding from "./pages/ProgramsLanding";
 
 // IMPACT & RESOURCES
 import SuccessStories from "./pages/impact/success-stories";
@@ -63,6 +64,9 @@ import SIWES from "./pages/get-involved/SiwesNysc";
 import HireTalent from "./pages/get-involved/HireTalent";
 import Community from "./pages/get-involved/Community";
 import DonateForm from "./pages/get-involved/DonateForm";
+import NotFound from "./pages/NotFound";
+
+
 
 export default function App() {
   return (
@@ -90,6 +94,7 @@ export default function App() {
         <Route path="/what-we-do/sdg-alignment" element={<SDGAlignment />} />
 
         {/* PROGRAMS */}
+        <Route path="/programs" element={<ProgramsLanding />} />
         <Route path="/programs/gep" element={<GEP />} />
         <Route path="/programs/slep" element={<SLEP />} />
         <Route path="/programs/umtazi" element={<ProjectUmtazi />} />
@@ -131,6 +136,7 @@ export default function App() {
         <Route path="/get-involved/community" element={<Community />} />
         <Route path="/get-involved/donate/form" element={<DonateForm />} />
 
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
