@@ -1,27 +1,19 @@
 
 import { useEffect, useRef, useState } from "react";
 
-import guardian from "../../assets/images/news/guardian.png";
-import punch from "../../assets/images/news/punch.png";
-import vanguard from "../../assets/images/news/vanguard.png";
-import businessday from "../../assets/images/news/businessday.png";
-import thecable from "../../assets/images/news/thecable.png";
-import unesco from "../../assets/images/news/unesco.png";
-import Leadership from "../../assets/images/news/Leadership.png";
-import MIT from "../../assets/images/news/MIT.png";
-import BLUE from "../../assets/images/news/BLUE.png";
+
 
 export default function NewsMentions() {
   const logos = [
-    guardian,
-    punch,
-    vanguard,
-    businessday,
-    thecable,
-    unesco,
-    Leadership,
-    MIT,
-    BLUE,
+    "/images/news/guardian.png",
+    "/images/news/punch.png",
+    "/images/news/vanguard.png",
+    "/images/news/businessday.png",
+    "/images/news/thecable.png",
+    "/images/news/unesco.png",
+    "/images/news/leadership.png",
+    "/images/news/mit.png",
+    "/images/news/blue.png",
   ];
 
   const sectionRef = useRef(null);

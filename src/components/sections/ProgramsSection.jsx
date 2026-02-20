@@ -2,9 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 
-import program1 from "../../assets/images/programs/program1.jpg";
-import program2 from "../../assets/images/programs/program2.jpg";
-import program3 from "../../assets/images/programs/program3.jpg";
 
 export default function ProgramsSection() {
   const ref = useRef(null);
@@ -23,19 +20,19 @@ export default function ProgramsSection() {
   const programs = [
     {
       title: "Youth Empowerment & Employability",
-      image: program1,
+      image: "/images/programs/employability.jpg",
       description:
         "Through vocational training, mentorship, and entrepreneurship development, we empower young people with the skills and confidence needed to thrive in today’s economy.",
     },
     {
       title: "Education & Digital Inclusion",
-      image: program2,
+      image: "/images/programs/education.jpg",
       description:
         "We improve access to quality education and digital skills for underserved communities, ensuring no learner is left behind in the digital age.",
     },
     {
       title: "Community Development Initiatives",
-      image: program3,
+      image: "/images/programs/community.jpg",
       description:
         "Our community-driven programs address climate advocacy, civic education, and leadership development to build resilient and sustainable communities.",
     },

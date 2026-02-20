@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import heroBg from "../../assets/images/hero-bg.jpg";
+
 
 export default function HeroSection() {
   return (
     <section
       className="relative h-screen flex items-center justify-center text-white"
       style={{
-        backgroundImage: `url(${heroBg})`,
+        backgroundImage: `url(/images/hero-bg.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

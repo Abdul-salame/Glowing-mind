@@ -15,7 +15,7 @@ import {
   Lightbulb, 
   Briefcase 
 } from "lucide-react"; 
-import knowledgeImg from "../../assets/images/impact/knowledge.jpg";
+
 import Footer from "../../components/layout/Footer";
 
 export default function KnowledgeProducts() {

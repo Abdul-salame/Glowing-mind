@@ -18,21 +18,22 @@ import {
 
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/images/logo.png";
 
-import cert1 from "../../assets/images/certificates/cert1.png";
-import cert2 from "../../assets/images/certificates/cert2.png";
-import cert3 from "../../assets/images/certificates/cert3.png";
-import cert4 from "../../assets/images/certificates/cert4.png";
-import cert5 from "../../assets/images/certificates/cert5.png";
 
+const certificates = [
+  "/images/certificates/cert1.png",
+  "/images/certificates/cert2.png",
+  "/images/certificates/cert3.png",
+  "/images/certificates/cert4.png",
+  "/images/certificates/cert5.png",
+];
 export default function Footer() {
   return (
     <footer className="bg-blue-950 text-white">
       <div className="max-w-7xl mx-auto px-4 py-16 grid gap-12 md:grid-cols-3">
         {/* LEFT COLUMN */}
         <div>
-          <img src={logo} alt="GMI Logo" className="h-20 mb-6" />
+          <img src="/images/logo.png" alt="GMI Logo" className="h-20 mb-6" />
 
           <p className="text-sm text-gray-200 leading-relaxed">
             Glowing Minds Initiatives for Human Development is a non-profit

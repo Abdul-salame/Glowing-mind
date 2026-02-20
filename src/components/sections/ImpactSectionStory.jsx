@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { CheckCircle2, Users, MapPin, Briefcase, X } from "lucide-react";
-import impactImage from "../../assets/images/impact.jpg"; 
+ 
 
 export default function ImpactStorySection() {
   const ref = useRef(null);
@@ -35,7 +35,7 @@ export default function ImpactStorySection() {
         >
           <div className="absolute -top-4 -left-4 w-24 h-24 bg-blue-100 rounded-full -z-10" />
           <img
-            src={impactImage}
+            src="/images/impact/impact1.jpg"
             alt="GMI Impact"
             className="rounded-3xl shadow-2xl w-full aspect-[4/5] object-cover"
           />

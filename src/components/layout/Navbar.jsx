@@ -1,13 +1,13 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const [openMenu, setOpenMenu] = useState(null); // Desktop hover state
+  const [openMenu, setOpenMenu] = useState(null); 
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeMobileSubmenu, setActiveMobileSubmenu] = useState(null); // Mobile accordion state
+  const [activeMobileSubmenu, setActiveMobileSubmenu] = useState(null); 
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -98,7 +98,7 @@ export default function Navbar() {
       <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" onClick={() => setMobileOpen(false)}>
           <img
-            src={logo}
+            src="/images/logo.png"
             alt="Logo"
             className={`h-10 md:h-12 transition ${scrolled || mobileOpen ? "" : "brightness-0 invert"}`}
           />
