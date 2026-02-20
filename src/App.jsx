@@ -76,9 +76,7 @@ export default function App() {
         <Route path="/blog/:id" element={<BlogPost />} />
 
         {/* ABOUT */}
-        {/**
-         * 
-         */}
+        
          <Route path="/about/identity" element={<Identity />} />
         <Route path="/about/why-we-exist" element={<WhyWeExist />} />
         <Route path="/about/vision-mission" element={<VisionMission />} />
