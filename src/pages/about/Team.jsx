@@ -3,52 +3,39 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Footer from "../../components/layout/Footer";
 
-import abdullahi from "../../assets/images/team/abdullahi-bala.jpg";
-import bello from "../../assets/images/team/bello-lateef.jpg";
-import samirah from "../../assets/images/team/samirah-bello.jpg";
-import ibrahim from "../../assets/images/team/ibrahim-jimoh.jpg";
-
-import shamsudeen from "../../assets/images/team/shamsudeen-gidado.jpg";
-import hamdalat from "../../assets/images/team/hamdalat-yusuf.jpg";
-import abdulbasit from "../../assets/images/team/abdulbasit-abdulrazak.jpg";
-import iradatullah from "../../assets/images/team/iradatullah-yakub.jpg";
-import sakeenah from "../../assets/images/team/sakeenah-ibrahim.jpg";
 
 export default function Team() {
   const [activeMember, setActiveMember] = useState(null);
-  /* OUR FACULTY STATE COMMENTED OUT
-  const [activeFilter, setActiveFilter] = useState("All");
-  */
 
   const leadership = [
     {
       name: "Prof. Abdullahi Bala",
       role: "Board Chairman",
-      image: abdullahi,
-      bio: `Professor Abdullahi Bala is a distinguished academic...`, // truncated for brevity
+      image: "/images/team/abdullahi-bala.jpg",
+      bio: `Professor Abdullahi Bala is a distinguished academic...`,
     },
     {
       name: "Mr. Bello Lateef",
       role: "Board Member",
-      image: bello,
+      image: "/images/team/bello-lateef.jpg",
       bio: `Lateef Bello Adekunle is an experienced international...`,
     },
     {
       name: "Mrs. Samirah Bello",
       role: "Board Member",
-      image: samirah,
+      image: "/images/team/samirah-bello.jpg",
       bio: `Samirah Bello is an agribusiness leader...`,
     },
     {
       name: "Mr. Ibrahim Jimoh",
       role: "Board Member",
-      image: ibrahim,
+      image: "/images/team/ibrahim-jimoh.jpg",
       bio: `Ibrahim Jimoh is a seasoned software engineer...`,
     },
     {
       name: "Mr. Shamsudeen Abdulrazak",
       role: "Board Secretary",
-      image: shamsudeen,
+      image: "/images/team/shamsudeen-gidado.jpg",
       bio: `SHAMSUDEEN ABDULRAZAK – EXECUTIVE DIRECTOR...`,
     },
   ];
@@ -57,47 +44,34 @@ export default function Team() {
     {
       name: "Shamsudeen Abdulrazak",
       role: "Executive Director",
-      image: shamsudeen,
+      image: "/images/team/shamsudeen-gidado.jpg",
       bio: `Shamsudeen is a Social Entrepreneur...`,
     },
     {
       name: "Hamdalat Yusuf",
       role: "Operations Manager",
-      image: hamdalat,
+      image: "/images/team/hamdalat-yusuf.jpg",
       bio: `Hamdalat Ayoola Yusuf is the Head of Operations...`,
     },
     {
       name: "Abdulbasit Abdulrazak",
       role: "Policy and Research Lead",
-      image: abdulbasit,
+      image: "/images/team/abdulbasit-abdulrazak.jpg",
       bio: `I am a research-driven pharmaceutical professional...`,
     },
     {
       name: "Iradatullah Yakub",
       role: "Communication Manager",
-      image: iradatullah,
+      image: "/images/team/iradatullah-yakub.jpg",
       bio: `Iradatullah Yakub is the Communication Lead...`,
     },
     {
       name: "Sakeenah Ibrahim",
       role: "Program Manager",
-      image: sakeenah,
+      image: "/images/team/sakeenah-ibrahim.jpg",
       bio: `Sakeenah Ibrahim is the Program Manager...`,
     },
   ];
-
-  /* OUR FACULTY DATA COMMENTED OUT
-  const faculty = [
-    { name: "Chytwo Ola", role: "Faculty Member", category: "Employability", image: null },
-    ...
-  ];
-
-  const filters = ["All", "Employability", "Technology", "Governance", "Climate", "Entrepreneurship", "Leadership"];
-
-  const filteredFaculty = activeFilter === "All" 
-    ? faculty 
-    : faculty.filter((f) => f.category === activeFilter);
-  */
 
   return (
     <div className="pt-32 bg-white">
@@ -124,54 +98,6 @@ export default function Team() {
             ))}
           </div>
         </section>
-
-        {/* OUR FACULTY SECTION COMMENTED OUT 
-        <section className="bg-blue-50 p-10 rounded-3xl">
-          <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Faculty</h2>
-          <p className="text-gray-700 max-w-3xl mb-8">
-            Our faculty comprises over 40 seasoned professionals delivering hands-on, practice-driven training across Nigeria.
-          </p>
-
-          <div className="flex flex-wrap gap-2 mb-10">
-            {filters.map((filter) => (
-              <button
-                key={filter}
-                onClick={() => setActiveFilter(filter)}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
-                  activeFilter === filter ? "bg-blue-600 text-white shadow-md" : "bg-white text-gray-600 hover:bg-blue-100"
-                }`}
-              >
-                {filter}
-              </button>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <AnimatePresence mode="popLayout">
-              {filteredFaculty.map((member) => (
-                <motion.div
-                  key={member.name}
-                  layout
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  className="bg-white p-4 rounded-xl shadow-sm text-center"
-                >
-                  <div className="h-40 w-40 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden">
-                    {member.image ? (
-                      <img src={member.image} alt={member.name} className="h-full w-full object-cover" />
-                    ) : (
-                      <div className="h-full w-full flex items-center justify-center text-gray-400">Photo</div>
-                    )}
-                  </div>
-                  <h3 className="font-bold text-gray-900">{member.name}</h3>
-                  <p className="text-xs text-blue-600 uppercase tracking-wider">{member.category}</p>
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          </div>
-        </section>
-        */}
       </div>
 
       <AnimatePresence>
@@ -190,7 +116,7 @@ export default function Team() {
               animate={{ y: 0, opacity: 1 }}
             >
               <div className="flex flex-col md:flex-row gap-6 mb-6">
-                <img src={activeMember.image} className="w-32 h-32 rounded-2xl object-cover" alt="" />
+                <img src={activeMember.image} className="w-32 h-32 rounded-2xl object-cover" alt={activeMember.name} />
                 <div>
                   <h2 className="text-3xl font-bold text-blue-950">{activeMember.name}</h2>
                   <p className="text-blue-600 font-bold">{activeMember.role}</p>
@@ -225,7 +151,11 @@ function TeamCard({ member, onClick }) {
     >
       <div className="h-64 bg-gray-200 overflow-hidden">
         {member.image ? (
-          <img src={member.image} alt={member.name} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+          <img 
+            src={member.image} 
+            alt={member.name} 
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" 
+          />
         ) : (
           <div className="h-full w-full flex items-center justify-center text-gray-400">No Image</div>
         )}

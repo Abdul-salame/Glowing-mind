@@ -12,7 +12,7 @@ import {
   Award,
   BookOpen
 } from "lucide-react";
-import Footer from "../../components/layout/Footer";
+import Footer from "../../components/layout/Footer.jsx";
 import heroGovernance from "../../assets/images/heroes/governance-hero.jpg";
 import { fadeUp, stagger } from "../../animations/variants";
 
