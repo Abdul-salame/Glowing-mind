@@ -13,7 +13,6 @@ import {
   BookOpen
 } from "lucide-react";
 import Footer from "../../components/layout/Footer.jsx";
-import heroGovernance from "../../assets/images/heroes/governance-hero.jpg";
 import { fadeUp, stagger } from "../../animations/variants";
 
 export default function Governance() {
@@ -55,10 +54,10 @@ export default function Governance() {
 
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col">
-      {/* HERO */}
+      {/* HERO - Updated to use the public folder path */}
       <div
         className="relative h-[420px] bg-cover bg-center flex items-center"
-        style={{ backgroundImage: `url(${heroGovernance})` }}
+        style={{ backgroundImage: `url('/images/heroes/governance-hero.jpg')` }}
       >
         <div className="absolute inset-0 bg-slate-900/70" />
         <div className="relative max-w-6xl mx-auto px-6">
