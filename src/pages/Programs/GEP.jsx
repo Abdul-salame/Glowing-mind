@@ -25,7 +25,7 @@ export default function GraduateEmployability() {
       {/* HERO */}
       <section
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
-        style={{ backgroundImage: `url(/images/hero-gep.jpg)` }}
+        style={{ backgroundImage: `url(/images/heroes/gep-hero.jpg)` }}
       >
         <div className="absolute inset-0 bg-black/60" />
 

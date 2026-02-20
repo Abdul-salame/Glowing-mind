@@ -66,15 +66,21 @@ export default function OrganizationalPolicies() {
           
           <motion.p variants={fadeUp} className="text-gray-600 mb-8 max-w-3xl">
             GMI maintains a robust framework of 33 internal policies ensuring full adherence to national 
-            regulations, donor requirements, and the highest ethical standards across all operations[cite: 1726, 1981].
+            regulations, donor requirements, and the highest ethical standards across all operations.
           </motion.p>
 
-          <motion.img
-            variants={fadeUp}
-            src="/images/hero-policies.jpg"
-            className="w-full h-80 object-cover rounded-xl shadow mb-12"
-            alt="GMI Governance Framework"
-          />
+         <div className="relative rounded-xl overflow-hidden mb-10 h-72 w-full">
+  <motion.img
+    variants={fadeUp}
+    src="/images/transparency/policies.jpg"
+    className="h-full w-full object-cover"
+    alt="GMI Organizational Policies"
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/50" />
+</div>
+
 
           <motion.div variants={fadeUp} className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {policyGroups.map((group, index) => (

@@ -107,7 +107,7 @@ const Contact = () => {
         <div 
           className="absolute inset-0 z-0 bg-fixed bg-cover bg-center"
           style={{ 
-            backgroundImage: `url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80')`, // Replace with your impact image
+            backgroundImage: `url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80')`, 
           }}
         >
           <div className="absolute inset-0 bg-black/80"></div>

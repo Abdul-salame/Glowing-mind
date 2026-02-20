@@ -15,12 +15,18 @@ export default function Partnerships() {
             GMI Partnerships & Alliances
           </motion.h1>
 
-          <motion.img
-            variants={fadeUp}
-            src="/images/hero-partnerships.jpg"
-            className="w-full h-80 object-cover rounded-xl shadow mb-10"
-            alt="GMI Collaboration"
-          />
+         <div className="relative rounded-xl overflow-hidden mb-10 h-72 w-full">
+  <motion.img
+    variants={fadeUp}
+    src="/images/transparency/partnerships.jpg"
+    className="h-full w-full object-cover"
+    alt="GMI Partnerships & Alliances"
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/60" />
+</div>
+
 
           <motion.div variants={fadeUp} className="text-gray-700 space-y-8">
             <div className="max-w-4xl">

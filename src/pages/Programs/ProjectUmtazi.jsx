@@ -10,9 +10,9 @@ export default function ProjectUmtazi() {
       
       <section
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
-        style={{ backgroundImage: `url(/images/hero-umtazi.jpg)` }}
+        style={{ backgroundImage: `url(/images/heroes/umtazi.jpg)` }}
       >
-        <div className="absolute inset-0 bg-blue-900/70" />
+        <div className="absolute inset-0 bg-black/80" />
         <motion.div variants={fadeUp} initial="hidden" animate="show" className="relative max-w-4xl mx-auto text-center px-6">
           <h1 className="text-5xl font-extrabold mb-6">Project Umtazi</h1>
           <p className="text-xl md:text-2xl font-light leading-relaxed">

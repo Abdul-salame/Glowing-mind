@@ -92,6 +92,7 @@ export default function SuccessStories() {
                       alt={story.name}
                       className="h-full w-full object-cover"
                     />
+                    <div className="absolute inset-0 bg-black/50" />
                     <span className="absolute bottom-0 left-0 bg-blue-900 px-4 py-1 text-white text-xs font-bold uppercase tracking-widest">
                       {story.role}
                     </span>

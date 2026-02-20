@@ -10,9 +10,9 @@ export default function YoungClimateEntrepreneurs() {
       {/* HERO SECTION */}
       <section
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
-        style={{ backgroundImage: `url(/images/hero-climate.jpg)` }}
+        style={{ backgroundImage: `url(/images/heroes/climate.jpg)` }}
       >
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/70" />
         <motion.div variants={fadeUp} initial="hidden" animate="show" className="relative max-w-5xl mx-auto text-center px-6">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Young Climate Entrepreneurs Program</h1>
           <p className="mt-6 text-xl md:text-2xl text-green-50 max-w-3xl mx-auto">
@@ -109,17 +109,17 @@ export default function YoungClimateEntrepreneurs() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-8">Closing the Climate Gap</h2>
           <p className="text-blue-100 mb-10 leading-relaxed text-lg">
-            With youth participation in climate governance below 30% in most African countries, we are bridging the gap by equipping young people with the skills to drive the green economy[cite: 826].
+            With youth participation in climate governance below 30% in most African countries, we are bridging the gap by equipping young people with the skills to drive the green economy.
           </p>
           <div className="flex flex-wrap justify-center gap-8">
             <div className="text-center">
               <span className="block text-4xl font-bold">0.3%</span>
-              <span className="text-xs uppercase tracking-widest text-blue-100">Global Funding Reach for Youth Green Initiatives [cite: 800]</span>
+              <span className="text-xs uppercase tracking-widest text-blue-100">Global Funding Reach for Youth Green Initiatives </span>
             </div>
-            <div className="w-px h-12 bg-blue -700 hidden md:block" />
+            <div className="w-px h-12 bg-blue-700 hidden md:block" />
             <div className="text-center">
               <span className="block text-4xl font-bold">SDG 13</span>
-              <span className="text-xs uppercase tracking-widest text-blue-100">Direct Alignment with Climate Action [cite: 854]</span>
+              <span className="text-xs uppercase tracking-widest text-blue-100">Direct Alignment with Climate Action </span>
             </div>
           </div>
         </div>

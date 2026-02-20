@@ -22,18 +22,23 @@ export default function Community() {
             Join the GMI Community
           </motion.h1>
 
-          <motion.img 
-            variants={fadeUp} 
-            src="/images/GetInvolved/community.jpg" 
-            className="w-full h-80 object-cover rounded-2xl shadow-lg mb-12" 
-            alt="GMI Community Gathering" 
-          />
+       <div className="relative rounded-xl overflow-hidden mb-10 h-72 w-full">
+  <motion.img
+    variants={fadeUp}
+    src="/images/GetInvolved/community.jpg"
+    className="h-full w-full object-cover"
+    alt="GMI Community Gathering"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+</div>
+
 
           <motion.div variants={fadeUp} className="text-gray-700 max-w-4xl space-y-8">
             <div className="prose prose-lg">
               <p>
-                Becoming a part of the Glowing Minds Initiatives (GMI) community means joining a vibrant network of changemakers[cite: 1530]. 
-                With a digital footprint reaching <strong>33 out of 36 states in Nigeria</strong>, we offer a hybrid platform where location is no barrier to collaboration, mentorship, and collective impact[cite: 1922, 1923].
+                Becoming a part of the Glowing Minds Initiatives (GMI) community means joining a vibrant network of changemakers. 
+                With a digital footprint reaching <strong>33 out of 36 states in Nigeria</strong>, we offer a hybrid platform where location is no barrier to collaboration, mentorship, and collective impact.
               </p>
             </div>
 
@@ -43,7 +48,7 @@ export default function Community() {
                 <Network className="text-primary w-10 h-10 shrink-0" />
                 <div>
                   <h3 className="font-bold text-lg text-primary">Global Networking</h3>
-                  <p className="text-sm">Connect with peers, industry experts, and ecosystem enablers from both the private and development sectors[cite: 1640].</p>
+                  <p className="text-sm">Connect with peers, industry experts, and ecosystem enablers from both the private and development sectors.</p>
                 </div>
               </div>
 
@@ -51,7 +56,7 @@ export default function Community() {
                 <MessagesSquare className="text-primary w-10 h-10 shrink-0" />
                 <div>
                   <h3 className="font-bold text-lg text-primary">Peer Learning</h3>
-                  <p className="text-sm">Participate in collaborative platforms that facilitate peer-to-peer knowledge sharing and mentorship[cite: 1530].</p>
+                  <p className="text-sm">Participate in collaborative platforms that facilitate peer-to-peer knowledge sharing and mentorship.</p>
                 </div>
               </div>
 
@@ -59,7 +64,7 @@ export default function Community() {
                 <Zap className="text-primary w-10 h-10 shrink-0" />
                 <div>
                   <h3 className="font-bold text-lg text-primary">Exclusive Access</h3>
-                  <p className="text-sm">Get priority access to our annual <strong>Future Focus Conference</strong> and specialized training workshops[cite: 1640].</p>
+                  <p className="text-sm">Get priority access to our annual <strong>Future Focus Conference</strong> and specialized training workshops.</p>
                 </div>
               </div>
 
@@ -67,7 +72,7 @@ export default function Community() {
                 <Lightbulb className="text-primary w-10 h-10 shrink-0" />
                 <div>
                   <h3 className="font-bold text-lg text-primary">Innovation Exposure</h3>
-                  <p className="text-sm">Engage with the <strong>Glowing Minds Hub</strong>, an environment built to fuel productivity and groundbreaking excellence[cite: 1657, 1659].</p>
+                  <p className="text-sm">Engage with the <strong>Glowing Minds Hub</strong>, an environment built to fuel productivity and groundbreaking excellence.</p>
                 </div>
               </div>
             </div>
@@ -81,13 +86,13 @@ export default function Community() {
                 <div className="flex items-start gap-3">
                   <Globe className="text-primary w-5 h-5 shrink-0 mt-1" />
                   <p className="text-sm">
-                    <strong>Democratic Impact:</strong> We use digital innovation to ensure underserved youths in remote regions have equitable access to funding and leadership opportunities[cite: 1530, 1923].
+                    <strong>Democratic Impact:</strong> We use digital innovation to ensure underserved youths in remote regions have equitable access to funding and leadership opportunities.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Zap className="text-primary w-5 h-5 shrink-0 mt-1" />
                   <p className="text-sm">
-                    <strong>Self-Reliance:</strong> Our community is a springboard for young people to become co-creators of development solutions rather than just beneficiaries[cite: 1477, 1515].
+                    <strong>Self-Reliance:</strong> Our community is a springboard for young people to become co-creators of development solutions rather than just beneficiaries.
                   </p>
                 </div>
               </div>

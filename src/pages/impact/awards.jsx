@@ -29,12 +29,18 @@ export default function Awards() {
             Awards & Recognitions
           </motion.h1>
 
-          <motion.img
-            variants={fadeUp}
-            src="/images/impact/awards.jpg"
-            className="rounded-xl shadow mb-10 h-72 w-full object-cover"
-            alt="GMI Awards and Recognition"
-          />
+        <div className="relative rounded-xl overflow-hidden mb-10 h-72 w-full">
+  <motion.img
+    variants={fadeUp}
+    src="/images/impact/awards.jpg"
+    className="h-full w-full object-cover"
+    alt="GMI Awards and Recognition"
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/50" />
+</div>
+
 
           <motion.div variants={fadeUp} className="grid md:grid-cols-1 gap-8">
             {awardsList.map((award, index) => (

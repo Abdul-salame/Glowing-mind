@@ -21,12 +21,17 @@ export default function Advocate() {
             Advocate for Change
           </motion.h1>
 
-          <motion.img 
-            variants={fadeUp} 
-            src="/images/GetInvolved/advocate.jpg"
-            className="w-full h-80 object-cover rounded-2xl shadow-lg mb-12" 
-            alt="Youth Advocacy" 
-          />
+         <div className="relative rounded-xl overflow-hidden mb-10 h-72 w-full">
+  <motion.img
+    variants={fadeUp}
+    src="/images/GetInvolved/advocate.jpg"
+    className="h-full w-full object-cover"
+    alt="GMI Advocacy"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+</div>
+
 
           <motion.div
             variants={fadeUp}

@@ -23,12 +23,17 @@ export default function Volunteer() {
             Volunteer / Mentor
           </motion.h1>
 
-          <motion.img
-            variants={fadeUp}
-            src="/images/GetInvolved/volunteer.jpg"
-            className="w-full h-80 object-cover rounded-2xl shadow-lg mb-12"
-            alt="Volunteer with GMI"
-          />
+        <div className="relative rounded-xl overflow-hidden mb-10 h-72 w-full">
+  <motion.img
+    variants={fadeUp}
+    src="/images/GetInvolved/volunteer.jpg"
+    className="h-full w-full object-cover"
+    alt="Volunteer with GMI"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+</div>
+
 
           {/* Intro Text */}
           <motion.div

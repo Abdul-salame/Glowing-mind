@@ -10,7 +10,7 @@ export default function PolicyLab() {
       {/* HERO SECTION */}
       <section
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
-        style={{ backgroundImage: `url(/images/hero-policy.jpg)` }}
+        style={{ backgroundImage: `url(/images/heroes/policy.jpg)` }}
       >
         <div className="absolute inset-0 bg-slate-900/70" />
         <motion.div variants={fadeUp} initial="hidden" animate="show" className="relative max-w-5xl mx-auto text-center px-6">

@@ -24,12 +24,17 @@ export default function SiwesNysc() {
             Request SIWES / NYSC Placement
           </motion.h1>
 
-          <motion.img 
-            variants={fadeUp} 
-            src="/images/GetInvolved/siwes.jpg" 
-            className="w-full h-80 object-cover rounded-2xl shadow-lg mb-12" 
-            alt="SIWES and NYSC at GMI" 
-          />
+         <div className="relative rounded-xl overflow-hidden mb-10 h-72 w-full">
+  <motion.img
+    variants={fadeUp}
+    src="/images/GetInvolved/siwes.jpg"
+    className="h-full w-full object-cover"
+    alt="SIWES and NYSC at GMI"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+</div>
+
 
           <motion.div variants={fadeUp} className="text-gray-700 max-w-4xl space-y-8">
             <div className="prose prose-lg">

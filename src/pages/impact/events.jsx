@@ -39,12 +39,18 @@ export default function AnnualEvents() {
             Annual Events
           </motion.h1>
 
-          <motion.img
-            variants={fadeUp}
-            src="/images/impact/events.jpg"
-            className="rounded-xl shadow mb-10 h-72 w-full object-cover"
-            alt="GMI Annual Events"
-          />
+        <div className="relative rounded-xl overflow-hidden mb-10 h-72 w-full">
+  <motion.img
+    variants={fadeUp}
+    src="/images/impact/events.jpg"
+    className="h-full w-full object-cover"
+    alt="GMI Annual Events"
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/50" />
+</div>
+
 
           <motion.div variants={fadeUp} className="grid gap-10">
             {events.map((event, index) => (

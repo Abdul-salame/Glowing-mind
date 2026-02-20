@@ -57,7 +57,7 @@ export default function CoreCompetencies() {
       
       <section
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
-        style={{ backgroundImage: `url(/images/hero-competencies.jpg)` }}
+        style={{ backgroundImage: `url(/images/heroes/competencies-hero.jpg)` }}
       >
         <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
         <motion.div

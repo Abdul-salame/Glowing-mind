@@ -18,12 +18,17 @@ export default function Donate() {
             Invest in the Future of African Youth
           </motion.h1>
 
-          <motion.img
-            variants={fadeUp}
-            src="/images/GetInvolved/donate.jpg"
-            className="w-full h-72 object-cover rounded-xl shadow mb-10"
-            alt="Support GMI"
-          />
+          <div className="relative rounded-xl overflow-hidden mb-10 h-72 w-full">
+  <motion.img
+    variants={fadeUp}
+    src="/images/GetInvolved/donate.jpg"
+    className="h-full w-full object-cover"
+    alt="Donate to GMI"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+</div>
+
           {/* Content */}
           <motion.div
             variants={fadeUp}

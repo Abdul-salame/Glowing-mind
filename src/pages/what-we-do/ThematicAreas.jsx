@@ -67,7 +67,7 @@ export default function ThematicAreas() {
       {/* hero section*/}
       <section
         className="pt-40 pb-28 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(/images/hero-thematic-areas.jpg)` }}
+        style={{ backgroundImage: `url(/images/heroes/thematic-areas.jpg)` }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
         <div className="relative max-w-6xl mx-auto px-6 text-white">

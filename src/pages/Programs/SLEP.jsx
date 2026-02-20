@@ -10,7 +10,7 @@ export default function StudentEntrepreneurship() {
       {/* HERO SECTION */}
       <section
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
-        style={{ backgroundImage: `url(/images/hero-slep.jpg)` }}
+        style={{ backgroundImage: `url(/images/heroes/slep.jpg)` }}
       >
         <div className="absolute inset-0 bg-black/70" />
         <motion.div variants={fadeUp} initial="hidden" animate="show" className="relative max-w-5xl mx-auto px-6 text-center">

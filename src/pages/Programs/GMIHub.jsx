@@ -10,9 +10,9 @@ export default function GlowingMindsHub() {
       {/* HERO SECTION */}
       <section
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
-        style={{ backgroundImage: `url(/images/hero-hub.jpg)` }}
+        style={{ backgroundImage: `url(/images/heroes/hub.jpg)` }}
       >
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/70" />
         <motion.div variants={fadeUp} initial="hidden" animate="show" className="relative max-w-5xl mx-auto text-center px-6">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Glowing Minds Hub (Suleja)</h1>
           <p className="mt-6 text-xl md:text-2xl text-blue-50 max-w-3xl mx-auto">

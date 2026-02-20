@@ -30,12 +30,18 @@ export default function LegalCompliance() {
             Legal & Compliance
           </motion.h1>
 
-          <motion.img
-            variants={fadeUp}
-            src="/images/hero-legal.jpg"
-            alt="GMI Legal Status"
-            className="w-full h-80 object-cover rounded-xl shadow mb-10"
-          />
+          <div className="relative rounded-xl overflow-hidden mb-10 h-72 w-full">
+  <motion.img
+    variants={fadeUp}
+    src="/images/transparency/legal.jpg"
+    className="h-full w-full object-cover"
+    alt="GMI Legal Compliance"
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/50" />
+</div>
+
 
           <motion.div
             variants={fadeUp}
