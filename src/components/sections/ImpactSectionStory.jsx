@@ -35,7 +35,7 @@ export default function ImpactStorySection() {
         >
           <div className="absolute -top-4 -left-4 w-24 h-24 bg-blue-100 rounded-full -z-10" />
           <img
-            src="/images/impact/impact1.jpg"
+            src="/images/impact.jpg"
             alt="GMI Impact"
             className="rounded-3xl shadow-2xl w-full aspect-[4/5] object-cover"
           />

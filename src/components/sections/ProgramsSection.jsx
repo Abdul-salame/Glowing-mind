@@ -20,19 +20,19 @@ export default function ProgramsSection() {
   const programs = [
     {
       title: "Youth Empowerment & Employability",
-      image: "/images/programs/employability.jpg",
+      image: "/images/programs/program3.jpg",
       description:
         "Through vocational training, mentorship, and entrepreneurship development, we empower young people with the skills and confidence needed to thrive in today’s economy.",
     },
     {
       title: "Education & Digital Inclusion",
-      image: "/images/programs/education.jpg",
+      image: "/images/programs/program1.jpg",
       description:
         "We improve access to quality education and digital skills for underserved communities, ensuring no learner is left behind in the digital age.",
     },
     {
       title: "Community Development Initiatives",
-      image: "/images/programs/community.jpg",
+      image: "/images/programs/program2.jpg",
       description:
         "Our community-driven programs address climate advocacy, civic education, and leadership development to build resilient and sustainable communities.",
     },

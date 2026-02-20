@@ -12,31 +12,49 @@ export default function Team() {
       name: "Prof. Abdullahi Bala",
       role: "Board Chairman",
       image: "/images/team/abdullahi-bala.jpg",
-      bio: `Professor Abdullahi Bala is a distinguished academic...`,
+      bio: `PROF ABDULLAHI BALA – BOARD CHAIRMAN 
+Professor Abdullahi Bala is a distinguished academic and higher education administrator from Suleja, Niger State, Nigeria. He holds a First Class Bachelor of Agriculture degree from Ahmadu Bello University, Zaria, an MSc in Soil Chemistry and Fertility from the University of Reading, and a PhD in Soil Microbiology from the University of London, both supported by Commonwealth scholarships.
+Appointed Pioneer Vice-Chancellor of Phoenix University Agwada in October 2023, he previously served as Vice-Chancellor of the Federal University of Technology, Minna, where he held several senior leadership roles over three decades. His tenure was marked by expanded academic programmes, improved research output, enhanced student support, and strong institutional rankings.
+Professor Bala is a Fellow of the Soil Science Society of Nigeria and the Nigerian Institution of Mechanical Engineers. He currently serves as Deputy Chair, Board of Directors, Diamond Development Organisation (DDI); Chair, Board of Glowing Minds Initiatives for Human Development; and Co-Chair, Board of the International Centre for Emerging Technologies. He holds the traditional titles of Walin Zazzau Suleja and Jagaban Ilimin Bosso.
+`,
     },
     {
       name: "Mr. Bello Lateef",
       role: "Board Member",
       image: "/images/team/bello-lateef.jpg",
-      bio: `Lateef Bello Adekunle is an experienced international...`,
+      bio: `MR BELLO LATEEF – BOARD MEMBER 
+Lateef Bello Adekunle is an experienced international development professional, nonprofit leader, and fundraising specialist. He serves as a principal at Grithworth LLC, where he advances philanthropic strategy, resource mobilization, and global development initiatives. Lateef combines over 15 years of experience in project management, civil engineering, and social impact work with academic training that includes studies at the Indiana University Lilly Family School of Philanthropy. 
+His work focuses on empowering communities through sustainable programs, grant development, and advocacy for equitable resource distribution. Prior to his current role, he has engaged in diverse roles spanning international development campaigns, social justice advocacy, and capacity-building for nonprofit organizations. Lateef is known for bridging technical expertise and strategic fundraising to support mission-driven organizations and deliver measurable social impact.
+`,
     },
     {
       name: "Mrs. Samirah Bello",
       role: "Board Member",
       image: "/images/team/samirah-bello.jpg",
-      bio: `Samirah Bello is an agribusiness leader...`,
+      bio: `MRS SAMIRAH BELLO – BOARD MEMBER 
+Samirah is a management and business professional with over seven years’ experience in agribusiness and eight years in community development. She currently leads partnerships at ThriveAgric, ensuring that agricultural value chains across Africa have access to operational and financial resources while creating sustainable impact through the SDG lens. Her work has empowered hundreds of thousands of smallholder farmers by improving access to finance, technology, and productivity through collaborations with national and international stakeholders.
+She also provides consulting services, serves on several NGO and youth organization boards, and has driven projects in education, children’s rights, domestic and sexual violence prevention, women and youth empowerment, and governance.
+Samirah holds a master’s degree in Globalisation, Business, and Development from the University of Sussex (distinction), and is a Chevening Scholar, Mandela Washington Fellow, One Young World Ambassador, and YALI RLC fellow. She is committed to generating social, economic, and environmental impact in business to drive sustainability and growth.
+`,
     },
     {
       name: "Mr. Ibrahim Jimoh",
       role: "Board Member",
       image: "/images/team/ibrahim-jimoh.jpg",
-      bio: `Ibrahim Jimoh is a seasoned software engineer...`,
+      bio: `MR IBRAHIM JIMOH – BOARD MEMBER 
+Ibrahim Jimoh is a seasoned software engineer and tech entrepreneur with a BSc in Information Technology from the Chartered Institute for IT, London, and a PGD in System Analysis. With nearly a decade of experience, he specializes in ERP software design, system automation, AI solutions, and blockchain development for government agencies, private organizations, and startups.
+He is the founder of Code4Africa, a social initiative providing coding education to African children, having trained over 2,000 individuals across four countries. As co-founder of a leading enterprise software and business automation company, he has led teams that launched three successful startups in EdTech (CoreCert), HealthTech (WeCare247), and FinTech (CorePay).
+An active member of the British Computer Society, the Chartered Institute for IT, and ICM UK, Jimoh also serves as a startup evaluator for the Federal Ministry of Humanitarian Affairs and consultant for the Ministry of Culture and Tourism. He is driven by continuous learning, innovation, and social impact.
+`,
     },
     {
       name: "Mr. Shamsudeen Abdulrazak",
       role: "Board Secretary",
       image: "/images/team/shamsudeen-gidado.jpg",
-      bio: `SHAMSUDEEN ABDULRAZAK – EXECUTIVE DIRECTOR...`,
+      bio: ` Shamsudeen is a Social Entrepreneur and the Executive Director of Glowing Minds Initiatives for Human Development; a nonprofit dedicated to reducing unemployment and improving employability among young people, with a team passionate about making a positive impact on Employability, Climate Change, Gender Inclusion and Civic Engagement.
+Shamsudeen holds a Masters of Business Administration (Humanitarian) with specialization in Social Entrepreneurship from Roxbourg Institute of Social Entrepreneurship, Vaud Switzerland. A Bachelor degree in Library and Information Technology from Federal University of Technology, Minna. He is an Alumnus from Fate Foundation and a 2021 fellow of the Friedrich Ebert Stiftung Nigeria Open Minds Young Voices Network. He is 2021 Associate of Initiative for Revival and Sustainability - (IRSD).
+Shamsudeen has extensive knowledge of Leadership, Youth Empowerment, Development, Communications, Media, Business Development and Organizational Development.
+`,
     },
   ];
 
@@ -45,31 +63,38 @@ export default function Team() {
       name: "Shamsudeen Abdulrazak",
       role: "Executive Director",
       image: "/images/team/shamsudeen-gidado.jpg",
-      bio: `Shamsudeen is a Social Entrepreneur...`,
+      bio: `Shamsudeen is a Social Entrepreneur and the Executive Director of Glowing Minds Initiatives for Human Development; a nonprofit dedicated to reducing unemployment and improving employability among young people, with a team passionate about making a positive impact on Employability, Climate Change, Gender Inclusion and Civic Engagement.
+Shamsudeen holds a Masters of Business Administration (Humanitarian) with specialization in Social Entrepreneurship from Roxbourg Institute of Social Entrepreneurship, Vaud Switzerland. A Bachelor degree in Library and Information Technology from Federal University of Technology, Minna. He is an Alumnus from Fate Foundation and a 2021 fellow of the Friedrich Ebert Stiftung Nigeria Open Minds Young Voices Network. He is 2021 Associate of Initiative for Revival and Sustainability - (IRSD).
+Shamsudeen has extensive knowledge of Leadership, Youth Empowerment, Development, Communications, Media, Business Development and Organizational Development.
+`,
     },
     {
       name: "Hamdalat Yusuf",
       role: "Operations Manager",
       image: "/images/team/hamdalat-yusuf.jpg",
-      bio: `Hamdalat Ayoola Yusuf is the Head of Operations...`,
+      bio: `Amdalat Ayoola Yusuf is the Head of Operations at Glowing Minds Initiatives for Human Development, where she plays a key role in driving organizational efficiency and program implementation. She is also a committed serial volunteer with a strong passion for community development and human-centered initiatives.`,
     },
     {
       name: "Abdulbasit Abdulrazak",
       role: "Policy and Research Lead",
       image: "/images/team/abdulbasit-abdulrazak.jpg",
-      bio: `I am a research-driven pharmaceutical professional...`,
+      bio: `I am a research-driven pharmaceutical professional passionate about advancing Youth Development in Nigeria and Africa.
+
+Complementing my research background, I possess growing software engineering and digital innovation skills that support data-driven health solutions, with skills in web development (HTML, CSS, JavaScript), Git/GitHub, AI tools for research productivity, and graphic design for scientific communication and advocacy.
+
+Beyond research, I am committed to youth engagement, gender inclusion, and stakeholder-driven health advocacy. I am interested in collaborations that drive pharmaceutical innovation, digital health solutions, and equitable access to healthcare.`,
     },
     {
       name: "Iradatullah Yakub",
       role: "Communication Manager",
-      image: "/images/team/iradatullah-yakub.jpg",
-      bio: `Iradatullah Yakub is the Communication Lead...`,
+      image: "/images/team/iradatuallah-yakub.jpg",
+      bio: `Iradatullah Yakub is the Communication Lead and Content Strategist at Glowing Minds Initiatives, where she develops and manages Communication and content Strategy of the Organisation that supports accessible, inclusive, and impactful Youth Programming. Her work combines communication, digital storytelling, and Youth-centered approaches to amplify the organisation’s mission.`,
     },
     {
       name: "Sakeenah Ibrahim",
       role: "Program Manager",
       image: "/images/team/sakeenah-ibrahim.jpg",
-      bio: `Sakeenah Ibrahim is the Program Manager...`,
+      bio: `Sakeenah Ibrahim is the Program Manager at Glowing Minds Initiatives for Human Development`,
     },
   ];
 
