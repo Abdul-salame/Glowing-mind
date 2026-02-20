@@ -15,7 +15,7 @@ import {
   Briefcase
 } from "lucide-react";
 import Footer from "../../components/layout/Footer";
-import heroImage from "../../assets/images/why-we-exist-hero.jpg";
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -25,10 +25,10 @@ const fadeUp = {
 export default function WhyWeExist() {
   return (
     <div className="bg-white">
-      {/* Hero Section */}
+      {/* Hero Section*/}
       <div
         className="relative h-[480px] flex items-center justify-center text-center text-white bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url('/images/why-we-exist-hero.jpg')` }}
       >
         <div className="absolute inset-0 bg-black/80" />
 

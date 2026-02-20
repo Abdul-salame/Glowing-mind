@@ -2,16 +2,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Footer from "../../components/layout/Footer";
-import heroVision from "../../assets/images/heroes/vision-hero.jpg";
+
 import { fadeUp, stagger } from "../../animations/variants";
 
 export default function VisionMission() {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col">
-      {/* HERO SECTION */}
+      {/* HERO SECTION*/}
       <div
         className="relative h-[420px] bg-cover bg-center flex items-center"
-        style={{ backgroundImage: `url(${heroVision})` }}
+        style={{ backgroundImage: `url('/images/heroes/vision-hero.jpg')` }}
       >
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative max-w-6xl mx-auto px-6">
@@ -28,7 +28,6 @@ export default function VisionMission() {
           </p>
         </div>
       </div>
-
       <div className="flex-grow">
         <div className="max-w-6xl mx-auto px-6 py-20 space-y-20">
           

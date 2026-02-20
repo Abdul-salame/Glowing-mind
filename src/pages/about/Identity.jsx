@@ -2,10 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Footer from "../../components/layout/Footer";
-import heroIdentity from "../../assets/images/heroes/identity-hero.jpg";
 import { fadeUp, stagger } from "../../animations/variants";
 
-//  SVG Icon
+//  SVG
 const IconWrapper = ({ children }) => (
   <div className="w-12 h-12 mb-4 text-blue-600 bg-blue-50 rounded-lg flex items-center justify-center">
     {children}
@@ -13,11 +12,11 @@ const IconWrapper = ({ children }) => (
 );
 export default function Identity() {
   return (
-    <div className="bg-slate-50 min-h-screen flex flex-col">
-      {/* 1. HERO SECTION  */}
+   <div className="bg-slate-50 min-h-screen flex flex-col">
+      {/* HERO SECTION*/}
       <div
         className="relative h-[480px] bg-cover bg-center flex items-center"
-        style={{ backgroundImage: `url(${heroIdentity})` }}
+        style={{ backgroundImage: `url('/images/heroes/identity-hero.jpg')` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-blue-900/60" />
         <div className="relative max-w-6xl mx-auto px-6">
@@ -42,10 +41,12 @@ export default function Identity() {
         </div>
       </div>
 
+      
+
       <div className="flex-grow">
         <div className="max-w-6xl mx-auto px-6 py-24 space-y-24">
           
-          {/* 2. STRATEGIC DIRECTION */}
+          {/*  STRATEGIC DIRECTION */}
           <section>
             <div className="grid lg:grid-cols-3 gap-8">
               <motion.div

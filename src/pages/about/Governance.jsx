@@ -54,7 +54,7 @@ export default function Governance() {
 
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col">
-      {/* HERO - Updated to use the public folder path */}
+      {/* HERO */}
       <div
         className="relative h-[420px] bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url('/images/heroes/governance-hero.jpg')` }}
