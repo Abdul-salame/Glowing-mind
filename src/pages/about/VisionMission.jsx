@@ -92,7 +92,7 @@ export default function VisionMission() {
             to contribute to equitable, resilient, and sustainable African development.
           </p>
         </motion.section>
-          {/* CORE OBJECTIVES */}
+          
         {/* CORE OBJECTIVES */}
 <section>
   <div className="text-center mb-12">
@@ -109,7 +109,7 @@ export default function VisionMission() {
   >
     {[
       {
-        title: "Youth Employability & Skills",
+        title: "Youth Employability & Skills Development",
         desc: "To equip young people with market-relevant skills, leadership capacity, and entrepreneurial competencies that enhance employability and support sustainable livelihoods."
       },
       {

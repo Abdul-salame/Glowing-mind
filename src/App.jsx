@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import ContactPage from "./pages/Contact";
 import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
+import CareerPage from "./pages/Career";
 
 // ABOUT
 import VisionMission from "./pages/about/VisionMission.jsx";
@@ -78,6 +79,7 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:id" element={<BlogPost />} />
+        <Route path="/career" element={<CareerPage />} />
 
         {/* ABOUT */}
         

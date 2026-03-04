@@ -109,28 +109,47 @@ export default function ProjectUmtazi() {
   </div>
 </section>
       {/* SDG IMPACT */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-8">Aligned with Global Goals</h2>
-          <div className="flex flex-wrap justify-center gap-6">
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-red-600 text-white flex items-center justify-center font-bold text-xl rounded-lg mb-2">1</div>
-              <span className="text-sm font-medium">No Poverty </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-orange-500 text-white flex items-center justify-center font-bold text-xl rounded-lg mb-2">5</div>
-              <span className="text-sm font-medium">Gender Equality </span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-blue-800 text-white flex items-center justify-center font-bold text-xl rounded-lg mb-2">8</div>
-              <span className="text-sm font-medium">Decent Work </span>
-            </div>
-          </div>
-          <p className="mt-10 text-gray-700 italic">
-            "We combat the exclusion of women and marginalized groups from opportunities and decision-making processes." 
-          </p>
-        </div>
-      </section>
+     <section className="py-20 bg-white">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    <h2 className="text-3xl font-bold mb-12 text-gray-900">Aligned with Global Goals</h2>
+    
+    <div className="flex flex-wrap justify-center gap-10 md:gap-16">
+      {/* SDG 1 */}
+      <div className="flex flex-col items-center">
+        <img 
+          src="/images/sdgs/sdg1.png" 
+          alt="SDG 1 - No Poverty" 
+          className="w-24 h-24 md:w-28 md:h-28 object-contain transition-transform duration-300 hover:scale-110" 
+        />
+        <span className="mt-4 text-xs font-bold uppercase tracking-widest text-gray-500">No Poverty</span>
+      </div>
+
+      {/* SDG 5 */}
+      <div className="flex flex-col items-center">
+        <img 
+          src="/images/sdgs/sdg5.png" 
+          alt="SDG 5 - Gender Equality" 
+          className="w-24 h-24 md:w-28 md:h-28 object-contain transition-transform duration-300 hover:scale-110" 
+        />
+        <span className="mt-4 text-xs font-bold uppercase tracking-widest text-gray-500">Gender Equality</span>
+      </div>
+
+      {/* SDG 8 */}
+      <div className="flex flex-col items-center">
+        <img 
+          src="/images/sdgs/sdg8.png" 
+          alt="SDG 8 - Decent Work and Economic Growth" 
+          className="w-24 h-24 md:w-28 md:h-28 object-contain transition-transform duration-300 hover:scale-110" 
+        />
+        <span className="mt-4 text-xs font-bold uppercase tracking-widest text-gray-500">Decent Work</span>
+      </div>
+    </div>
+
+    <p className="mt-12 text-gray-700 italic max-w-2xl mx-auto leading-relaxed border-t border-gray-100 pt-8">
+      "We combat the exclusion of women and marginalized groups from opportunities and decision-making processes." 
+    </p>
+  </div>
+</section>
 
       <Footer />
     </motion.div>

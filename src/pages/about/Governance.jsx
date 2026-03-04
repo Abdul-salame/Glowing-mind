@@ -45,7 +45,7 @@ export default function Governance() {
   ];
 
   const boardMembers = [
-    { name: "Prof. Abdullahi Bala", role: "Board Chairman", title: "Former VC, FUT Minna" },
+    { name: "Prof. Abdullahi Bala", role: "Board Chairman", title: "VC Phoneix University" },
     { name: "Mr. Bello Lateef", role: "Board Member", title: "Principal at Grithworth LLC" },
     { name: "Mrs. Samirah Bello", role: "Board Member", title: "Head of Partnerships at ThriveAgric" },
     { name: "Mr. Ibrahim Jimoh", role: "Board Member", title: "Founder of Code4Africa" },

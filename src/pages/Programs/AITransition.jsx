@@ -97,28 +97,51 @@ export default function AITransition() {
       </section>
 
       {/* STRATEGIC IMPORTANCE */}
-      <section className="py-20 bg-blue-900 text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-8 text-white">Why AI Transition?</h2>
-          <p className="text-blue-100 mb-10 leading-relaxed text-lg">
-            "Skills mismatches between labour demand and labour supply is a key labour market challenge in Nigeria". We close this gap by preparing youth for a future where AI-driven productivity is the standard for economic growth.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-4 border border-blue-400 rounded-lg">
-              <span className="block text-2xl font-bold">SDG 4</span>
-              <span className="text-xs uppercase text-blue-300">Quality Education </span>
-            </div>
-            <div className="p-4 border border-blue-400 rounded-lg">
-              <span className="block text-2xl font-bold">SDG 8</span>
-              <span className="text-xs uppercase text-blue-300">Decent Work </span>
-            </div>
-            <div className="p-4 border border-blue-400 rounded-lg">
-              <span className="block text-2xl font-bold">SDG 17</span>
-              <span className="text-xs uppercase text-blue-300">Partnerships </span>
-            </div>
-          </div>
-        </div>
-      </section>
+     <section className="py-20 bg-blue-900 text-white">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    <h2 className="text-3xl font-bold mb-8 text-white">Why AI Transition?</h2>
+
+    <p className="text-blue-100 mb-10 leading-relaxed text-lg">
+      "Skills mismatches between labour demand and labour supply is a key labour market challenge in Nigeria".
+      We close this gap by preparing youth for a future where AI-driven productivity is the standard for economic growth.
+    </p>
+
+    {/* SDG Logos */}
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 items-center justify-center">
+      
+      {/* SDG 4 */}
+      <div className="flex flex-col items-center">
+        <img
+          src="/images/sdgs/sdg4.png"
+          alt="SDG 4 - Quality Education"
+          className="w-28 h-28 object-contain mb-3"
+        />
+        <p className="text-sm text-blue-200 uppercase">Quality Education</p>
+      </div>
+
+      {/* SDG 8 */}
+      <div className="flex flex-col items-center">
+        <img
+          src="/images/sdgs/sdg8.png"
+          alt="SDG 8 - Decent Work and Economic Growth"
+          className="w-28 h-28 object-contain mb-3"
+        />
+        <p className="text-sm text-blue-200 uppercase">Decent Work</p>
+      </div>
+
+      {/* SDG 17 */}
+      <div className="flex flex-col items-center">
+        <img
+          src="/images/sdgs/sdg17.png"
+          alt="SDG 17 - Partnerships for the Goals"
+          className="w-28 h-28 object-contain mb-3"
+        />
+        <p className="text-sm text-blue-200 uppercase">Partnerships</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <Footer />
     </motion.div>

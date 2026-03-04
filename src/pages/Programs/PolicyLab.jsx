@@ -124,21 +124,37 @@ export default function PolicyLab() {
       </section>
 
       {/* IMPACT ALIGNMENT */}
-      <section className="py-20 text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">SDG Alignment</h2>
-          <div className="flex justify-center gap-10">
-            <div className="group">
-              <div className="w-20 h-20 bg-blue-700 text-white flex items-center justify-center rounded-lg text-2xl font-bold mb-2 mx-auto">16</div>
-              <p className="text-sm font-semibold uppercase tracking-wider text-gray-500">Strong Institutions</p>
-            </div>
-            <div className="group">
-              <div className="w-20 h-20 bg-blue-400 text-white flex items-center justify-center rounded-lg text-2xl font-bold mb-2 mx-auto">17</div>
-              <p className="text-sm font-semibold uppercase tracking-wider text-gray-500">Partnerships</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section className="py-20 text-center bg-white">
+  <div className="max-w-4xl mx-auto px-6">
+    <h2 className="text-2xl font-bold text-gray-900 mb-10">Impact & Global Goals</h2>
+    
+    <div className="flex flex-wrap justify-center gap-12">
+      {/* SDG 16 */}
+      <div className="flex flex-col items-center">
+        <img 
+          src="/images/sdgs/sdg16.png" 
+          alt="SDG 16 - Peace, Justice and Strong Institutions" 
+          className="w-24 h-24 md:w-32 md:h-32 object-contain transition-transform duration-300 hover:scale-105" 
+        />
+        <p className="mt-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+          Strong Institutions
+        </p>
+      </div>
+
+      {/* SDG 17 */}
+      <div className="flex flex-col items-center">
+        <img 
+          src="/images/sdgs/sdg17.png" 
+          alt="SDG 17 - Partnerships for the Goals" 
+          className="w-24 h-24 md:w-32 md:h-32 object-contain transition-transform duration-300 hover:scale-105" 
+        />
+        <p className="mt-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+          Partnerships
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       <Footer />
     </motion.div>

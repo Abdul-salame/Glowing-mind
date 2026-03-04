@@ -101,9 +101,9 @@ export default function Volunteer() {
       {/* CTA */}
       <CTAButtons
         primaryText="Apply to Volunteer"
-        primaryLink="/get-involved/volunteer"
+        primaryLink="https://forms.gle/jJ83YJEs12eWyJud8"
         secondaryText="Join Community"
-        secondaryLink="/get-involved/community"
+        secondaryLink="https://chat.whatsapp.com/IX5atzce9Nn06d0nXesjwU"
       />
 
       {/* Footer */}

@@ -40,7 +40,7 @@ export default function SiwesNysc() {
             <div className="prose prose-lg">
               <p>
                 Glowing Minds Initiatives (GMI) provides structured learning opportunities designed to transition undergraduates and fresh graduates from theoretical academic settings to the practical demands of the global labor market[cite: 1466, 1467, 1474]. 
-                Whether you are a <strong>SIWES student</strong> seeking industrial experience or an <strong>NYSC member</strong> looking for a primary place of assignment, we offer a pathway to sustainable self-reliance[cite: 1515, 1530].
+                Whether you are a <strong>SIWES student</strong> seeking industrial experience or an <strong>NYSC member</strong> looking for a primary place of assignment, we offer a pathway to sustainable self-reliance.
               </p>
             </div>
 
@@ -50,7 +50,7 @@ export default function SiwesNysc() {
                 <Briefcase className="text-primary w-10 h-10 shrink-0" />
                 <div>
                   <h3 className="font-bold text-lg text-primary">Workforce Readiness</h3>
-                  <p className="text-sm">Gain hands-on involvement in real-world projects that build your workplace readiness and digital literacy[cite: 1471, 1486].</p>
+                  <p className="text-sm">Gain hands-on involvement in real-world projects that build your workplace readiness and digital literacy.</p>
                 </div>
               </div>
 
@@ -58,7 +58,7 @@ export default function SiwesNysc() {
                 <Terminal className="text-primary w-10 h-10 shrink-0" />
                 <div>
                   <h3 className="font-bold text-lg text-primary">Digital & Tech Exposure</h3>
-                  <p className="text-sm">Work alongside our Innovation Officers on digital infrastructure and AI transition initiatives[cite: 1619, 1747, 1963].</p>
+                  <p className="text-sm">Work alongside our Innovation Officers on digital infrastructure and AI transition initiatives.</p>
                 </div>
               </div>
 
@@ -66,7 +66,7 @@ export default function SiwesNysc() {
                 <Search className="text-primary w-10 h-10 shrink-0" />
                 <div>
                   <h3 className="font-bold text-lg text-primary">Research & Policy</h3>
-                  <p className="text-sm">Support the <strong>Glowing Minds Policy Lab</strong> in conducting research that influences youth-responsive policies[cite: 1524, 1629].</p>
+                  <p className="text-sm">Support the <strong>Glowing Minds Policy Lab</strong> in conducting research that influences youth-responsive policies.</p>
                 </div>
               </div>
 
@@ -74,7 +74,7 @@ export default function SiwesNysc() {
                 <Users className="text-primary w-10 h-10 shrink-0" />
                 <div>
                   <h3 className="font-bold text-lg text-primary">Community Impact</h3>
-                  <p className="text-sm">Engage directly with underserved communities to co-create inclusive social impact programs[cite: 1472, 1735, 1736].</p>
+                  <p className="text-sm">Engage directly with underserved communities to co-create inclusive social impact programs.</p>
                 </div>
               </div>
             </div>
@@ -86,11 +86,11 @@ export default function SiwesNysc() {
               </h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "Access to structured mentorship from industry experts[cite: 1732].",
-                  "Exposure to global best practices in nonprofit management[cite: 2099].",
-                  "Opportunity to build a professional network within our 33-state reach[cite: 1922].",
-                  "Post-placement career support and job fair recommendations[cite: 1576, 1934].",
-                  "Alignment with UN Sustainable Development Goals (SDGs)[cite: 1549]."
+                  "Access to structured mentorship from industry experts.",
+                  "Exposure to global best practices in nonprofit management.",
+                  "Opportunity to build a professional network within our 33-state reach.",
+                  "Post-placement career support and job fair recommendations.",
+                  "Alignment with UN Sustainable Development Goals (SDGs)."
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3 text-sm">
                     <CheckCircle2 className="text-green-600 w-5 h-5 shrink-0 mt-0.5" />
@@ -106,7 +106,7 @@ export default function SiwesNysc() {
  
       <CTAButtons 
         primaryText="Apply for SIWES/NYSC"
-        primaryLink="/get-involved/siwes"
+        primaryLink="https://forms.gle/AAocEX5mAWP57EeNA"
         secondaryText="Contact Us"
         secondaryLink="/contact"
       />

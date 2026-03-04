@@ -4,6 +4,8 @@ import {
   FaInstagram,
   FaYoutube,
   FaLinkedinIn,
+  FaTiktok, 
+  FaSpotify,
   FaMapMarkerAlt,
   FaEnvelope,
   FaPhoneAlt,
@@ -68,7 +70,7 @@ export default function Footer() {
           <ul className="space-y-3 text-sm text-gray-200">
             <li className="flex items-center gap-3">
               <FaHome className="text-accent" />
-              <Link to="/pages/home" className="hover:text-accent">Home</Link>
+              <Link to="/" className="hover:text-accent">Home</Link>
             </li>
 
             <li className="flex items-center gap-3">
@@ -78,7 +80,7 @@ export default function Footer() {
 
             <li className="flex items-center gap-3">
               <FaUsers className="text-accent" />
-              <Link to="/pages/who-we-are" className="hover:text-accent">
+              <Link to="/what-we-do/thematic-areas" className="hover:text-accent">
                 Who We Are
               </Link>
             </li>
@@ -99,7 +101,7 @@ export default function Footer() {
 
             <li className="flex items-center gap-3">
               <FaBriefcase className="text-accent" />
-              <Link to="/pages/careers" className="hover:text-accent">
+              <Link to="/career" className="hover:text-accent">
                 Careers
               </Link>
             </li>
@@ -152,21 +154,29 @@ export default function Footer() {
           </ul>
 
           {/* SOCIAL ICONS */}
-          <div className="flex gap-4 mt-6">
-            {[FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedinIn].map(
-              (Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-accent transition"
-                >
-                  <Icon />
-                </a>
-              )
-            )}
-          </div>
-        </div>
-      </div>
+<div className="flex flex-wrap gap-4 mt-6">
+  {[
+    { Icon: FaFacebookF, link: "https://www.facebook.com/glowingmindsinitiatives.org" },
+    { Icon: FaTwitter, link: "https://www.twitter.com/glowing_minds" },
+    { Icon: FaInstagram, link: "https://www.instagram.com/glowingmindsinitiatives.org" },
+    { Icon: FaYoutube, link: "https://www.youtube.com/@GlowingMindsInitiatives" },
+    { Icon: FaLinkedinIn, link: "https://www.linkedin.com/company/glowing-minds-initiatives/" },
+    { Icon: FaTiktok, link: "https://www.tiktok.com/@glowing.minds.ini" },
+    { Icon: FaSpotify, link: "https://open.spotify.com/episode/1qErvprjZ34feJTDbIkFJ4?si=OmqxBREHT2eZMGA3s7fWBw" } 
+  ].map((social, i) => (
+    <a
+      key={i}
+      href={social.link}
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-600 transition"
+    >
+      <social.Icon size={18} />
+    </a>
+  ))}
+</div>
+          </div> 
+        </div> 
 
       {/* BOTTOM FOOTER */}
       <div className="border-t border-white/10">

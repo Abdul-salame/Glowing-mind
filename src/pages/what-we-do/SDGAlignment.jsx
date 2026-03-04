@@ -22,12 +22,20 @@ const sdgSections = [
     reverse: true
   },
   {
+    number: 5,
+    title: "GENDER EQUALITY",
+    tagline: "Achieving gender equality and empowering all women and girls is central to our mission.",
+    desc: "GMI works to eliminate all forms of discrimination and violence against women and girls. We promote the use of enabling technology to promote the empowerment of women and ensure their full and effective participation in leadership and decision-making.",
+    image: "/images/sdgs/sdg5.png",
+    reverse: false
+  },
+  {
     number: 8,
     title: "DECENT WORK AND ECONOMIC GROWTH",
     tagline: "We Promote inclusive and sustainable economic growth, employment and decent work for all.",
     desc: "Glowing Minds Initiative For Human Development ensured Sustained and inclusive economic growth can drive progress, create decent jobs for all and improve living standards. COVID-19 has disrupted billions of lives and endangered the global economy.",
     image: "/images/sdgs/sdg8.png",
-    reverse: false
+    reverse: true
   },
   {
     number: 13,
@@ -35,7 +43,23 @@ const sdgSections = [
     tagline: "Climate change is affecting every country on every continent. It is disrupting national economies and affecting lives.",
     desc: "Glowing Minds Initiative For Human Development sees Saving lives and livelihoods requires urgent action to address both the pandemic and the climate emergency. There by we start what is call 'Waste to wealth.'",
     image: "/images/sdgs/sdg13.png",
+    reverse: false
+  },
+  {
+    number: 15,
+    title: "LIFE ON LAND",
+    tagline: "Protect, restore and promote sustainable use of terrestrial ecosystems.",
+    desc: "Through our environmental advocacy, we promote the sustainable management of forests, combat desertification, and halt land degradation. We believe that protecting biodiversity is essential for the future of the communities we serve.",
+    image: "/images/sdgs/sdg15.png",
     reverse: true
+  },
+  {
+    number: 16,
+    title: "PEACE, JUSTICE AND STRONG INSTITUTIONS",
+    tagline: "Promote peaceful and inclusive societies for sustainable development.",
+    desc: "We work to provide access to justice for all and build effective, accountable and inclusive institutions at all levels. This includes our advocacy for transparent governance and the protection of fundamental freedoms.",
+    image: "/images/sdgs/sdg16.png",
+    reverse: false
   },
   {
     number: 17,
@@ -43,7 +67,7 @@ const sdgSections = [
     tagline: "We join to strengthen the means of implementation of SDGs by partnership.",
     desc: "Ensure strengthening and streamlining cooperation between nation-states, both developed and developing, using the SDGs as a shared framework and a shared vision for defining that collaborative way forward.",
     image: "/images/sdgs/sdg17.png",
-    reverse: false
+    reverse: true
   }
 ];
 
@@ -55,7 +79,6 @@ export default function SDGAlignment() {
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
         style={{ backgroundImage: `url(/images/heroes/sdg-hero.jpg)` }}
       >
-
         <div className="absolute inset-0 bg-slate-900/60 z-0" />
         
         <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
@@ -73,7 +96,7 @@ export default function SDGAlignment() {
         </div>
       </section>
 
-      {/*  SDG sections */}
+      {/* SDG sections */}
       <div className="divide-y divide-gray-100">
         {sdgSections.map((sdg, index) => (
           <motion.section 

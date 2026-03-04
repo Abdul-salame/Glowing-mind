@@ -182,26 +182,63 @@ export default function GraduateEmployability() {
       </section>
 
       {/* IMPACT & SDG ALIGNMENT */}
-      <section className="py-20">
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto px-6 text-center"
-        >
-          <h2 className="text-3xl font-bold mb-6">Impact & Global Goals</h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            GEP is a cornerstone of our mission to build a self-reliant generation. By equipping youth with market-relevant skills, we directly contribute to:
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <span className="bg-red-100 text-red-700 px-4 py-2 rounded-full font-bold uppercase tracking-wider text-sm">SDG 1: No Poverty</span>
-            <span className="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full font-bold uppercase tracking-wider text-sm">SDG 4: Quality Education</span>
-            <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full font-bold uppercase tracking-wider text-sm">SDG 8: Decent Work</span>
-            <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-bold uppercase tracking-wider text-sm">SDG 17: Partnerships</span>
-          </div>
-        </motion.div>
-      </section>
+     <section className="py-20 bg-white">
+  <motion.div
+    variants={fadeUp}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true }}
+    className="max-w-5xl mx-auto px-6 text-center"
+  >
+    <h2 className="text-3xl font-bold mb-6 text-gray-900">Impact & Global Goals</h2>
+    <p className="text-lg text-gray-700 leading-relaxed mb-12 max-w-3xl mx-auto">
+      GEP is a cornerstone of our mission to build a self-reliant generation. By equipping youth with market-relevant skills, we directly contribute to:
+    </p>
+
+    {/* SDG Logo  */}
+    <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center gap-8 md:gap-12">
+      {/* SDG 1 */}
+      <div className="flex flex-col items-center">
+        <img 
+          src="/images/sdgs/sdg1.png" 
+          alt="SDG 1 - No Poverty" 
+          className="w-20 h-20 md:w-28 md:h-28 object-contain transition-transform duration-300 hover:scale-110" 
+        />
+        <span className="mt-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">No Poverty</span>
+      </div>
+
+      {/* SDG 4 */}
+      <div className="flex flex-col items-center">
+        <img 
+          src="/images/sdgs/sdg4.png" 
+          alt="SDG 4 - Quality Education" 
+          className="w-20 h-20 md:w-28 md:h-28 object-contain transition-transform duration-300 hover:scale-110" 
+        />
+        <span className="mt-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">Quality Education</span>
+      </div>
+
+      {/* SDG 8 */}
+      <div className="flex flex-col items-center">
+        <img 
+          src="/images/sdgs/sdg8.png" 
+          alt="SDG 8 - Decent Work" 
+          className="w-20 h-20 md:w-28 md:h-28 object-contain transition-transform duration-300 hover:scale-110" 
+        />
+        <span className="mt-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">Decent Work</span>
+      </div>
+
+      {/* SDG 17 */}
+      <div className="flex flex-col items-center">
+        <img 
+          src="/images/sdgs/sdg17.png" 
+          alt="SDG 17 - Partnerships" 
+          className="w-20 h-20 md:w-28 md:h-28 object-contain transition-transform duration-300 hover:scale-110" 
+        />
+        <span className="mt-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">Partnerships</span>
+      </div>
+    </div>
+  </motion.div>
+</section>
 
       <Footer />
     </motion.div>
