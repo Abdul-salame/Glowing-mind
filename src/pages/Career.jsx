@@ -64,12 +64,7 @@ export default function CareerPage() {
                 never be compared to what you will learn on your own." 
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <a 
-                  href="mailto:careers@glowingmindsinitiatives.org" 
-                  className="bg-white text-blue-900 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition-colors"
-                >
-                  View Open Roles
-                </a>
+               
                 <a 
                   href="https://forms.gle/jJ83YJEs12eWyJud8" 
                   className="bg-blue-700 text-white border border-blue-500 px-8 py-4 rounded-full font-bold hover:bg-blue-800 transition-colors"
