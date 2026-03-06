@@ -1,13 +1,10 @@
+
 import { motion } from "framer-motion";
 import { page, fadeUp, stagger } from "../../animations/variants";
-
 import CTAButtons from "../../components/common/CTAButtons";
 import Footer from "../../components/layout/Footer";
 
-
-/* ===============================
-   Impact Stats Component
-================================ */
+/* Impact Stats Component */
 function ImpactStats() {
   const stats = [
     { value: "2,500+", label: "Youth Reached" },
@@ -37,9 +34,6 @@ function ImpactStats() {
   );
 }
 
-/* ===============================
-   Success Stories Page
-================================ */
 export default function SuccessStories() {
   const stories = [
     {
@@ -84,16 +78,20 @@ export default function SuccessStories() {
                 <motion.div
                   key={index}
                   variants={fadeUp}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col"
+                  className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col group"
                 >
-                  <div className="relative h-64">
+                  {/* IMAGE CONTAINER - Optimized for faces */}
+                  <div className="relative h-80 md:h-96 w-full overflow-hidden">
                     <img
                       src={story.image}
                       alt={story.name}
-                      className="h-full w-full object-cover"
+                      // "object-top" ensures we prioritize heads/faces over feet
+                      className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-black/50" />
-                    <span className="absolute bottom-0 left-0 bg-blue-900 px-4 py-1 text-white text-xs font-bold uppercase tracking-widest">
+                    {/* Subtle gradient overlay to make the name/role pop if needed */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                    
+                    <span className="absolute bottom-4 left-4 bg-blue-900 px-4 py-1 text-white text-[10px] font-bold uppercase tracking-widest rounded-sm">
                       {story.role}
                     </span>
                   </div>
@@ -102,7 +100,7 @@ export default function SuccessStories() {
                     <h3 className="font-bold text-2xl text-blue-950 mb-4">
                       {story.name}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed italic">
+                    <p className="text-gray-700 leading-relaxed italic border-l-4 border-blue-100 pl-4">
                       “{story.description}”
                     </p>
                   </div>
@@ -113,7 +111,7 @@ export default function SuccessStories() {
             {/* Impact Narrative */}
             <motion.div
               variants={fadeUp}
-              className="mt-20 p-10 bg-primary/5 rounded-2xl text-center border border-primary/10"
+              className="mt-20 p-10 bg-blue-50/50 rounded-2xl text-center border border-blue-100"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">
                 The GMI Impact

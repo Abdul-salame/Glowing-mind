@@ -28,10 +28,12 @@ import GEP from "./pages/Programs/GEP";
 import SLEP from "./pages/Programs/SLEP";
 import ProjectUmtazi from "./pages/Programs/ProjectUmtazi";
 import YoungClimateEntrepreneurs from "./pages/Programs/YoungClimateEntrepreneurs";
+import YoungCivicInfluencers from "./pages/Programs/YoungCivicInfluencers";
 import AITransition from "./pages/Programs/AITransition";
 import PolicyLab from "./pages/Programs/PolicyLab";
 import GMIHub from "./pages/Programs/GMIHub";
 import ProgramsLanding from "./pages/ProgramsLanding";
+
 
 // IMPACT & RESOURCES
 import SuccessStories from "./pages/impact/success-stories";
@@ -99,11 +101,14 @@ export default function App() {
         <Route path="/programs" element={<ProgramsLanding />} />
         <Route path="/programs/gep" element={<GEP />} />
         <Route path="/programs/slep" element={<SLEP />} />
+        <Route path="/programs/ycep" element={<YoungClimateEntrepreneurs />} />
         <Route path="/programs/umtazi" element={<ProjectUmtazi />} />
         <Route path="/programs/climate" element={<YoungClimateEntrepreneurs />} />
         <Route path="/programs/ai" element={<AITransition />} />
         <Route path="/programs/policy-lab" element={<PolicyLab />} />
         <Route path="/programs/hub" element={<GMIHub />} />
+        <Route path="/programs/yccip" element={<YoungCivicInfluencers />} />
+
 
         {/* IMPACT */}
         <Route path="/impact/success-stories" element={<SuccessStories />} />

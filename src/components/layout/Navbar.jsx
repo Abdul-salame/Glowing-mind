@@ -48,6 +48,7 @@ export default function Navbar() {
         { label: "AI Transition Program", to: "/programs/ai" },
         { label: "Glowing Minds Policy Lab", to: "/programs/policy-lab" },
         { label: "Glowing Minds Hub (Suleja)", to: "/programs/hub" },
+        { label: "Young Civic Influencers (YCCIP)", to: "/programs/yccip" },
       ],
     },
     {
@@ -186,7 +187,7 @@ export default function Navbar() {
   );
 }
 
-// Sub-components kept similar but cleaner
+
 function NavItem({ to, text }) {
   return (
     <li>

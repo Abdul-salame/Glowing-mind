@@ -1,7 +1,6 @@
 
 import { motion } from "framer-motion";
 import Footer from "../../components/layout/Footer";
-
 import { page, fadeUp, stagger } from "../../animations/variants";
 
 export default function StudentEntrepreneurship() {
@@ -23,7 +22,7 @@ export default function StudentEntrepreneurship() {
         </motion.div>
       </section>
 
-      {/* BACKGROUND & RATIONALE */}
+      {/* BACKGROUND  */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div 
@@ -84,12 +83,80 @@ export default function StudentEntrepreneurship() {
         </div>
       </section>
 
-      {/* IMPACT / TESTIMONIAL SUMMARY */}
+      {/* STRATEGIC PROGRAM PHASES  */}
+      <section className="bg-gray-50 py-20">
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="max-w-6xl mx-auto px-6 text-center"
+        >
+          <motion.h2 variants={fadeUp} className="text-3xl font-bold mb-12 text-blue-900">
+            Strategic Program Phases
+          </motion.h2>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            {[
+              "Campus Leadership Bootcamps",
+              "Ideation & Venture Creation",
+              "Mentorship & Incubation",
+              "Student Innovation Showcases"
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                variants={fadeUp}
+                whileHover={{ y: -6 }}
+                className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border-t-4 border-blue-600 font-medium text-gray-800"
+              >
+                {item}
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
+
+      {/* IMPACT & SDG ALIGNMENT */}
       <section className="py-20 bg-white">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="max-w-5xl mx-auto px-6 text-center"
+        >
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Impact & Global Goals</h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-12 max-w-3xl mx-auto">
+            SLEP empowers the "Campus Entrepreneur" by fostering leadership and self-reliance, directly contributing to these Sustainable Development Goals:
+          </p>
+
+          <div className="grid grid-cols-2 md:flex md:flex-wrap justify-center gap-8 md:gap-12">
+            <div className="flex flex-col items-center">
+              <img src="/images/sdgs/sdg4.png" alt="SDG 4" className="w-20 h-20 md:w-28 md:h-28 object-contain" />
+              <span className="mt-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">Quality Education</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img src="/images/sdgs/sdg8.png" alt="SDG 8" className="w-20 h-20 md:w-28 md:h-28 object-contain" />
+              <span className="mt-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">Decent Work</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img src="/images/sdgs/sdg9.png" alt="SDG 9" className="w-20 h-20 md:w-28 md:h-28 object-contain" />
+              <span className="mt-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">Innovation</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img src="/images/sdgs/sdg17.png" alt="SDG 17" className="w-20 h-20 md:w-28 md:h-28 object-contain" />
+              <span className="mt-4 text-[10px] font-bold uppercase tracking-widest text-gray-500">Partnerships</span>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* IMPACT / TESTIMONIAL SUMMARY */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-10 text-gray-900">Measuring Success </h2>
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="text-left bg-gray-50 p-8 rounded-2xl">
+            <div className="text-left bg-white p-8 rounded-2xl shadow-sm">
               <p className="italic text-gray-700 mb-6">
                 "For the past 8 weeks with SLEP 2.0, gaining business orientation is an understatement. From the Johari window to the Business Model Canvas and funding, I gained a lot for my business growth."
               </p>

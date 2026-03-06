@@ -1,3 +1,4 @@
+
 import {
   FaFacebookF,
   FaTwitter,
@@ -20,167 +21,124 @@ import {
 
 import { Link } from "react-router-dom";
 
-
-
-const certificates = [
-  "/images/certificates/cert1.png",
-  "/images/certificates/cert2.png",
-  "/images/certificates/cert3.png",
-  "/images/certificates/cert4.png",
-  "/images/certificates/cert5.png",
-];
-
 export default function Footer() {
   return (
     <footer className="bg-blue-950 text-white">
       <div className="max-w-7xl mx-auto px-4 py-16 grid gap-12 md:grid-cols-3">
-        {/* LEFT COLUMN */}
+        {/* LEFT COLUMN - ABOUT GMI */}
         <div>
           <img src="/images/logo.png" alt="GMI Logo" className="h-20 mb-6" />
-
           <p className="text-sm text-gray-200 leading-relaxed">
             Glowing Minds Initiatives for Human Development is a non-profit
             organization established in 2018 to address youth unemployment and
             unemployability through entrepreneurship, education, leadership
             development, climate advocacy, and civic engagement.
           </p>
-
-          {/* CERTIFICATES */}
-          <div className="mt-6 grid grid-cols-3 sm:grid-cols-5 gap-4 items-center">
-            {certificates.map((img, i) => (
-              <div
-                key={i}
-                className="flex items-center justify-center bg-white rounded-md p-2"
-              >
-                <img
-                  src={img}
-                  alt="Certificate"
-                  className="h-10 w-auto object-contain"
-                />
-              </div>
-            ))}
-          </div>
+          {/* Note: Award Column (certificates) has been removed per Point 18 */}
         </div>
 
-
-        {/*  QUICK LINKS */}
+        {/* QUICK LINKS */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-
+          <h3 className="text-lg font-semibold mb-6 border-b border-white/10 pb-2">Quick Links</h3>
           <ul className="space-y-3 text-sm text-gray-200">
-            <li className="flex items-center gap-3">
-              <FaHome className="text-accent" />
-              <Link to="/" className="hover:text-accent">Home</Link>
+            <li className="flex items-center gap-3 group">
+              <FaHome className="text-blue-400 group-hover:text-white transition-colors" />
+              <Link to="/" className="hover:text-white transition-colors">Home</Link>
             </li>
-
-            <li className="flex items-center gap-3">
-              <FaInfoCircle className="text-accent" />
-              <Link to="/about/identity" className="hover:text-accent">About</Link>
+            <li className="flex items-center gap-3 group">
+              <FaInfoCircle className="text-blue-400 group-hover:text-white transition-colors" />
+              <Link to="/about/identity" className="hover:text-white transition-colors">About Us</Link>
             </li>
-
-            <li className="flex items-center gap-3">
-              <FaUsers className="text-accent" />
-              <Link to="/what-we-do/thematic-areas" className="hover:text-accent">
-                Who We Are
-              </Link>
+            <li className="flex items-center gap-3 group">
+              <FaUsers className="text-blue-400 group-hover:text-white transition-colors" />
+              <Link to="/about/team" className="hover:text-white transition-colors">Our Team</Link>
             </li>
-
-            <li className="flex items-center gap-3">
-              <FaUsers className="text-accent" />
-              <Link to="/about/team" className="hover:text-accent">
-                Our Team
-              </Link>
+            <li className="flex items-center gap-3 group">
+              <FaBullseye className="text-blue-400 group-hover:text-white transition-colors" />
+              <Link to="/what-we-do/sdg-alignment" className="hover:text-white transition-colors">SDGs Focus</Link>
             </li>
-
-            <li className="flex items-center gap-3">
-              <FaBullseye className="text-accent" />
-              <Link to="/what-we-do/sdg-alignment" className="hover:text-accent">
-                SDGs Focus
-              </Link>
+            <li className="flex items-center gap-3 group">
+              <FaBriefcase className="text-blue-400 group-hover:text-white transition-colors" />
+              <Link to="/career" className="hover:text-white transition-colors">Careers</Link>
             </li>
-
-            <li className="flex items-center gap-3">
-              <FaBriefcase className="text-accent" />
-              <Link to="/career" className="hover:text-accent">
-                Careers
-              </Link>
+            <li className="flex items-center gap-3 group">
+              <FaBlog className="text-blue-400 group-hover:text-white transition-colors" />
+              <Link to="/blog" className="hover:text-white transition-colors">Blog</Link>
             </li>
-
-            <li className="flex items-center gap-3">
-              <FaBlog className="text-accent" />
-              <Link to="/blog" className="hover:text-accent">
-                Blog
-              </Link>
-            </li>
-
-            <li className="flex items-center gap-3">
-              <FaEnvelopeOpenText className="text-accent" />
-              <Link to="/contact" className="hover:text-accent">
-                Contact
-              </Link>
+            <li className="flex items-center gap-3 group">
+              <FaEnvelopeOpenText className="text-blue-400 group-hover:text-white transition-colors" />
+              <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
             </li>
           </ul>
         </div>
 
-        {/* RIGHT COLUMN – CONTACT */}
+        {/* RIGHT COLUMN – CONTACT (Point 13) */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-
-          <ul className="space-y-4 text-sm text-gray-200">
+          <h3 className="text-lg font-semibold mb-6 border-b border-white/10 pb-2">Contact Us</h3>
+          
+          <ul className="space-y-6 text-sm text-gray-200">
+            {/* Abuja Address (Point 13) */}
             <li className="flex items-start gap-3">
-              <FaMapMarkerAlt className="mt-1 text-accent" />
-              <span>
-                Behind House No 30, Franklin Street PDP Quarters,
-                Suleja – Niger State.
-              </span>
+              <FaMapMarkerAlt className="mt-1 text-blue-400 flex-shrink-0" />
+              <div>
+                <strong className="block text-white mb-1">Abuja Office:</strong>
+                <span>Plot 404, Marcus Garvey Street, 5th Avenue, Gwarimpa, Abuja.</span>
+              </div>
             </li>
 
-            <li className="flex items-center gap-3">
-              <FaEnvelope className="text-accent" />
-              <a
-                href="mailto:info@glowingmindsinitiatives.org"
-                className="hover:text-accent"
-              >
-                info@glowingmindsinitiatives.org
-              </a>
+            {/* Suleja Address */}
+            <li className="flex items-start gap-3">
+              <FaMapMarkerAlt className="mt-1 text-blue-400 flex-shrink-0" />
+              <div>
+                <strong className="block text-white mb-1">Niger State Office:</strong>
+                <span>Behind House No 30, Franklin Street, PDP Quarters, Suleja – Niger State.</span>
+              </div>
             </li>
 
-            <li className="flex items-center gap-3">
-              <FaPhoneAlt className="text-accent" />
-              <a href="tel:+2348148451424" className="hover:text-accent">
-                +234 814 845 1424
-              </a>
+            <li className="pt-2 space-y-3">
+              <div className="flex items-center gap-3">
+                <FaEnvelope className="text-blue-400" />
+                <a href="mailto:info@glowingmindsinitiatives.org" className="hover:text-blue-400 transition-colors">
+                  info@glowingmindsinitiatives.org
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaPhoneAlt className="text-blue-400" />
+                <a href="tel:+2348148451424" className="hover:text-blue-400 transition-colors">
+                  +234 814 845 1424
+                </a>
+              </div>
             </li>
           </ul>
 
           {/* SOCIAL ICONS */}
-<div className="flex flex-wrap gap-4 mt-6">
-  {[
-    { Icon: FaFacebookF, link: "https://www.facebook.com/glowingmindsinitiatives.org" },
-    { Icon: FaTwitter, link: "https://www.twitter.com/glowing_minds" },
-    { Icon: FaInstagram, link: "https://www.instagram.com/glowingmindsinitiatives.org" },
-    { Icon: FaYoutube, link: "https://www.youtube.com/@GlowingMindsInitiatives" },
-    { Icon: FaLinkedinIn, link: "https://www.linkedin.com/company/glowing-minds-initiatives/" },
-    { Icon: FaTiktok, link: "https://www.tiktok.com/@glowing.minds.ini" },
-    { Icon: FaSpotify, link: "https://open.spotify.com/episode/1qErvprjZ34feJTDbIkFJ4?si=OmqxBREHT2eZMGA3s7fWBw" } 
-  ].map((social, i) => (
-    <a
-      key={i}
-      href={social.link}
-      target="_blank" 
-      rel="noopener noreferrer"
-      className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-600 transition"
-    >
-      <social.Icon size={18} />
-    </a>
-  ))}
-</div>
-          </div> 
-        </div> 
+          <div className="flex flex-wrap gap-3 mt-8">
+            {[
+              { Icon: FaFacebookF, link: "https://www.facebook.com/glowingmindsinitiatives.org" },
+              { Icon: FaTwitter, link: "https://www.twitter.com/glowing_minds" },
+              { Icon: FaInstagram, link: "https://www.instagram.com/glowingmindsinitiatives.org" },
+              { Icon: FaYoutube, link: "https://www.youtube.com/@GlowingMindsInitiatives" },
+              { Icon: FaLinkedinIn, link: "https://www.linkedin.com/company/glowing-minds-initiatives/" },
+              { Icon: FaTiktok, link: "https://www.tiktok.com/@glowing.minds.ini" },
+              { Icon: FaSpotify, link: "https://spotify.com" } 
+            ].map((social, i) => (
+              <a
+                key={i}
+                href={social.link}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-600 transition-all duration-300"
+              >
+                <social.Icon size={16} />
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* BOTTOM FOOTER */}
-      <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-300">
+      <div className="border-t border-white/10 bg-blue-950/50">
+        <div className="max-w-7xl mx-auto px-4 py-6 text-center text-xs text-gray-400 tracking-wide">
           © 2026 GMI. All rights reserved | Powered by CorestreamNG
         </div>
       </div>
