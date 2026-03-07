@@ -1,7 +1,5 @@
 
-
 import { useEffect, useRef, useState } from "react";
-
 
 export default function ProgramsSection() {
   const ref = useRef(null);
@@ -17,33 +15,33 @@ export default function ProgramsSection() {
     return () => observer.disconnect();
   }, []);
 
-  const programs = [
+  const objectives = [
     {
       title: "Youth Empowerment & Employability",
       image: "/images/programs/program3.jpg",
       description:
-        "Through vocational training, mentorship, and entrepreneurship development, we empower young people with the skills and confidence needed to thrive in today’s economy.",
+        "Strategically addressing youth unemployment by equipping young graduates and artisans with 21st-century employability skills, vocational mastery, and professional mentorship.",
     },
     {
       title: "Education & Digital Inclusion",
       image: "/images/programs/program1.jpg",
       description:
-        "We improve access to quality education and digital skills for underserved communities, ensuring no learner is left behind in the digital age.",
+        "Bridging the digital divide through targeted literacy programs, ensuring underserved youth have the tools and knowledge to navigate and thrive in the global digital economy.",
     },
     {
-      title: "Community Development Initiatives",
+      title: "Community Development & Leadership",
       image: "/images/programs/program2.jpg",
       description:
-        "Our community-driven programs address climate advocacy, civic education, and leadership development to build resilient and sustainable communities.",
+        "Fostering resilient communities through civic education, climate advocacy, and leadership training that empowers local youth to lead sustainable social change.",
     },
   ];
 
   return (
     <section
       ref={ref}
-      className="relative bg-blue-800 py-20 overflow-hidden"
+      className="relative bg-blue-900 py-24 overflow-hidden"
     >
-      {/*shape*/}
+      {/* Decorative Top Shape */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
         <svg
           viewBox="0 0 1000 100"
@@ -54,49 +52,64 @@ export default function ProgramsSection() {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 relative">
-        {/* Heading */}
-        <div
-          className={`text-center max-w-3xl mx-auto mb-16 transition-all duration-1000
+      <div className="max-w-7xl mx-auto px-6 relative">
+                <div
+          className={`text-center max-w-3xl mx-auto mb-20 transition-all duration-1000
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">
-            Our Programs
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            Our Strategic Objectives
           </h2>
-          <p className="text-gray-200">
-            In a groundbreaking effort to uplift communities and foster youth
-            empowerment, Glowing Minds Initiatives has impacted over 2,000
-            beneficiaries across four states through education, skills
-            development, and community-driven solutions.
+          <p className="text-blue-100 text-lg">
+            Our work is guided by core objectives designed to foster sustainable 
+            human development and systemic change across Nigeria.
           </p>
         </div>
 
-        {/* Program cards */}
+        {/* Flip Cards Grid */}
         <div className="grid md:grid-cols-3 gap-10">
-          {programs.map((program, index) => (
+          {objectives.map((obj, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-1000
+              className={`group h-[400px] [perspective:1000px] transition-all duration-1000
                 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
-              style={{ transitionDelay: `${index * 150}ms` }}
+              style={{ transitionDelay: `${index * 200}ms` }}
             >
-              <img
-                src={program.image}
-                alt={program.title}
-                className="h-56 w-full object-cover"
-              />
+              {/* Card Inner Container */}
+              <div className="relative h-full w-full rounded-2xl shadow-2xl transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                
+                {/* Front Side */}
+                <div className="absolute inset-0 h-full w-full [backface-visibility:hidden]">
+                  <img
+                    src={obj.image}
+                    alt={obj.title}
+                    className="h-full w-full rounded-2xl object-cover brightness-75"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-transparent to-transparent rounded-2xl" />
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <h3 className="text-2xl font-bold text-white leading-tight">
+                      {obj.title}
+                    </h3>
+                    <p className="text-orange-400 text-sm font-bold mt-2 uppercase tracking-wider">
+                      Hover to explore →
+                    </p>
+                  </div>
+                </div>
 
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-950 mb-3">
-                  {program.title}
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  {program.description}
-                </p>
+                {/* The Side-Flip  */}
+                <div className="absolute inset-0 h-full w-full rounded-2xl bg-white p-8 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center text-center">
+                  <div className="w-16 h-1 bg-orange-500 mb-6" />
+                  <h3 className="text-2xl font-bold text-blue-900 mb-4">
+                    {obj.title}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    {obj.description}
+                  </p>
+                  <button className="mt-8 px-6 py-2 bg-blue-900 text-white rounded-full text-sm font-semibold hover:bg-orange-600 transition-colors">
+                    Learn More
+                  </button>
+                </div>
 
-                <button className="mt-5 inline-block text-accent font-semibold hover:underline">
-                  Learn More →
-                </button>
               </div>
             </div>
           ))}

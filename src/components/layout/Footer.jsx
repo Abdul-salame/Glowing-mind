@@ -114,13 +114,13 @@ export default function Footer() {
           {/* SOCIAL ICONS */}
           <div className="flex flex-wrap gap-3 mt-8">
             {[
-              { Icon: FaFacebookF, link: "https://www.facebook.com/glowingmindsinitiatives.org" },
+              { Icon: FaFacebookF, link: " https://www.facebook.com/glowingmindsinitiatives" },
               { Icon: FaTwitter, link: "https://www.twitter.com/glowing_minds" },
-              { Icon: FaInstagram, link: "https://www.instagram.com/glowingmindsinitiatives.org" },
+              { Icon: FaInstagram, link: "https://www.instagram.com/glowingmindsinitiatives" },
               { Icon: FaYoutube, link: "https://www.youtube.com/@GlowingMindsInitiatives" },
               { Icon: FaLinkedinIn, link: "https://www.linkedin.com/company/glowing-minds-initiatives/" },
               { Icon: FaTiktok, link: "https://www.tiktok.com/@glowing.minds.ini" },
-              { Icon: FaSpotify, link: "https://spotify.com" } 
+              { Icon: FaSpotify, link: "https://open.spotify.com/episode/1qErvprjZ34feJTDbIkFJ4?si=OmqxBREHT2eZMGA3s7fWBw " } 
             ].map((social, i) => (
               <a
                 key={i}

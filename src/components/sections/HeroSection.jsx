@@ -36,9 +36,11 @@ export default function HeroSection() {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="flex justify-center gap-4"
         >
-          <button className="bg-blue-700 px-8 py-3 rounded-md font-medium hover:opacity-90 transition">
-            Join Us
-          </button>
+          <Link to="/contact">
+            <button className="bg-blue-700 px-8 py-3 rounded-md font-medium hover:opacity-90 transition">
+              Join Us
+            </button>
+          </Link>
 
        <Link to="/get-involved/donate">
   <button className="border border-white px-8 py-3 rounded-md font-medium hover:bg-white hover:text-black transition">
