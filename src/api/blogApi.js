@@ -4,7 +4,7 @@ import api from "./api";
 
 // Get all blogs
 export const getBlogs = async () => {
-  const res = await api.get("/blog/blog");
+  const res = await api.get("/blog");
   return res.data;
 };
 
