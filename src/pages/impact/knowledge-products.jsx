@@ -4,44 +4,50 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { page, fadeUp, stagger } from "../../animations/variants";
 import { 
-  FileText, 
   BarChart, 
   Users, 
-  Gavel, 
   BookOpen, 
-  Map, 
-  Scale, 
   FileCheck, 
-  Lightbulb, 
-  Briefcase 
+  Youtube, 
+  Music, 
+  Newspaper,
+  ExternalLink,
+  Globe
 } from "lucide-react"; 
 
 import Footer from "../../components/layout/Footer";
 
 export default function KnowledgeProducts() {
   
-  const publications = [
-    { name: "Annual Impact Reports", link: "/transparency/financials", internal: true, icon: <BarChart className="w-5 h-5" /> },
-    { name: "Financial Reports (Audited)", link: "/transparency/financials", internal: true, icon: <Scale className="w-5 h-5" /> },
+  
+  const institutionalReports = [
+    { name: "2024 Annual Impact Report", link: "/reports/GMIHD 2024 ANNUAL REPORT.pdf", internal: false, icon: <BarChart className="w-5 h-5" /> },
+    { name: "2023 Annual Impact Report", link: "/reports/GMIHD 2023 ANNUAL REPORT.pdf", internal: false, icon: <BarChart className="w-5 h-5" /> },
+    { name: "2022 Annual Impact Report", link: "/reports/GMIHD 2022 ANNUAL REPORT.pdf", internal: false, icon: <BarChart className="w-5 h-5" /> },
     { name: "FFC Conference Reports", link: "/impact/events", internal: true, icon: <Users className="w-5 h-5" /> },
-    { name: "AGM Reports", link: "/about/governance", internal: true, icon: <FileCheck className="w-5 h-5" /> },
-    { name: "Project and Academic Articles", link: "/media/newspaper", internal: true, icon: <BookOpen className="w-5 h-5" /> },
-    { name: "Strategic Plans and Case Studies", link: "/about/identity", internal: true, icon: <Map className="w-5 h-5" /> }
   ];
 
-  const researchAndPolicy = [
-    { name: "Youth Employability Research", link: "/programs/policy-lab", internal: true, icon: <FileText className="w-5 h-5" /> },
-    { name: "Legal Instrument Analysis", link: "/transparency/legal", internal: true, icon: <Gavel className="w-5 h-5" /> },
-    { name: "Policy Briefs & Advocacy", link: "/media/press-releases", internal: true, icon: <Lightbulb className="w-5 h-5" /> },
-    { name: "Course Curriculums & Toolkits", link: "/programs/gep", internal: true, icon: <Briefcase className="w-5 h-5" /> },
-    { name: "Careers & Business Articles", link: "/blog", internal: true, icon: <BookOpen className="w-5 h-5" /> }
+  
+  const newspaperFeatures = [
+    { name: "Guardian: NGO trains Niger youths on policy advocacy", link: "https://guardian.ng/news/ngo-trains-niger-youths-on-policy-development-advocacy/", internal: false },
+    { name: "Nigeria Daily Post: Journalists training on fake news", link: "https://nigeriadailypost.com.ng/2024/11/14/niger-journalists-get-training-on-curbing-fake-news-others/", internal: false },
+    { name: "Analyst News: GMI trains journalists in Niger State", link: "https://analystnews.com.ng/glowing-minds-initiatives-for-human-development-trains-journalists-in-niger-state-on-threat-of-fake-news/", internal: false },
+    { name: "The Voice: Niger journalists trained on fake news", link: "https://thevoice.com.ng/niger-journalists-trained-on-fake-news/", internal: false },
+    { name: "The Eagle Eye: News Details", link: "https://www.theeagleeye.com.ng/news-details.php?nid=199", internal: false },
+  ];
+
+  
+  const multimediaFeatures = [
+    { name: "GMI TV (YouTube Channel)", link: "https://youtu.be/Y1gsdZDESjQ?si=tU6EQYA6qmiovxeo", internal: false, icon: <Youtube className="w-5 h-5" /> },
+    { name: "GMI Podcast (Spotify)", link: "https://open.spotify.com/episode/1qErvprjZ34feJTDbIkFJ4?si=OmqxBREHT2eZMGA3s7fWBw ", internal: false, icon: <Music className="w-5 h-5" /> },
+    { name: "Facebook Video Feature", link: "https://www.facebook.com/share/v/1EPwpDzKbL/", internal: false, icon: <Globe className="w-5 h-5" /> }
   ];
 
   const renderLink = (item) => {
     const linkClass = "flex items-center group text-gray-700 hover:text-blue-600 transition-all duration-200";
     const iconBox = (
       <div className="p-2 rounded-lg bg-blue-50 group-hover:bg-blue-100 mr-4 transition-colors">
-        <span className="text-primary">{item.icon}</span>
+        <span className="text-primary">{item.icon || <Newspaper className="w-5 h-5" />}</span>
       </div>
     );
 
@@ -56,7 +62,9 @@ export default function KnowledgeProducts() {
     return (
       <a href={item.link} target="_blank" rel="noopener noreferrer" className={linkClass}>
         {iconBox}
-        <span className="font-medium">{item.name}</span>
+        <span className="font-medium flex items-center gap-2">
+          {item.name} <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+        </span>
       </a>
     );
   };
@@ -67,57 +75,58 @@ export default function KnowledgeProducts() {
         <div className="max-w-7xl mx-auto px-6">
           <motion.div variants={stagger} initial="hidden" animate="show">
             
-            {/* HERO SECTION  */}
-            <motion.div 
-              variants={fadeUp} 
-              className="relative rounded-xl shadow-lg mb-10 h-72 w-full overflow-hidden"
-            >
-              <img
-                src="/images/impact/knowledge.jpg"
-                className="w-full h-full object-cover"
-                alt="GMI Knowledge Products"
-              />
-              {/* T */}
-              <div className="absolute inset-0 bg-black/60 flex items-center justify-center text-center px-4">
-                <h1 className="text-3xl md:text-4xl font-bold text-white">
-                  Knowledge Products & Publications
+            <motion.div variants={fadeUp} className="relative rounded-2xl shadow-xl mb-16 h-80 w-full overflow-hidden">
+              <img src="/images/impact/knowledge.jpg" className="w-full h-full object-cover" alt="Knowledge Products" />
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-transparent flex items-center px-12">
+                <h1 className="text-4xl md:text-5xl font-bold text-white max-w-lg leading-tight">
+                  Knowledge Products & Media Features
                 </h1>
               </div>
             </motion.div>
 
-            {/* CONTENT GRID */}
-            <div className="grid md:grid-cols-2 gap-12">
-              {/* Institutional Reports Section */}
-              <motion.div variants={fadeUp}>
-                <h2 className="text-2xl font-semibold text-primary mb-6 flex items-center gap-2">
-                  <FileCheck className="w-6 h-6" /> Institutional Reports
+            <div className="grid md:grid-cols-3 gap-12">
+              {/*  Annual Reports */}
+              <motion.div variants={fadeUp} className="space-y-6">
+                <h2 className="text-xl font-bold text-primary flex items-center gap-2 border-b pb-4">
+                  <FileCheck className="text-orange-500" /> Annual Reports
                 </h2>
-                <ul className="space-y-4">
-                  {publications.map((item, index) => (
+                <ul className="space-y-5">
+                  {institutionalReports.map((item, index) => (
                     <li key={index}>{renderLink(item)}</li>
                   ))}
                 </ul>
               </motion.div>
 
-              {/* Research & Policy Section */}
-              <motion.div variants={fadeUp}>
-                <h2 className="text-2xl font-semibold text-primary mb-6 flex items-center gap-2">
-                  <BookOpen className="w-6 h-6" /> Research & Policy
+              {/*  Print & Digital  */}
+              <motion.div variants={fadeUp} className="space-y-6">
+                <h2 className="text-xl font-bold text-primary flex items-center gap-2 border-b pb-4">
+                  <BookOpen className="text-orange-500" /> Print & Digital Press
                 </h2>
-                <ul className="space-y-4">
-                  {researchAndPolicy.map((item, index) => (
+                <ul className="space-y-5">
+                  {newspaperFeatures.map((item, index) => (
+                    <li key={index}>{renderLink(item)}</li>
+                  ))}
+                </ul>
+              </motion.div>
+
+              {/* TV & Radio  */}
+              <motion.div variants={fadeUp} className="space-y-6">
+                <h2 className="text-xl font-bold text-primary flex items-center gap-2 border-b pb-4">
+                  <Youtube className="text-orange-500" /> TV & Radio Features
+                </h2>
+                <ul className="space-y-5">
+                  {multimediaFeatures.map((item, index) => (
                     <li key={index}>{renderLink(item)}</li>
                   ))}
                 </ul>
               </motion.div>
             </div>
 
-            {/* QUOTE SECTION */}
-            <motion.div variants={fadeUp} className="mt-12 p-6 bg-gray-50 rounded-lg italic text-gray-600 border-l-4 border-primary">
-              <p>
-                Our knowledge products are designed to translate innovative ideas into tangible, 
-                impactful policies that address the root causes of societal problems, unlocking 
-                the full potential of African youth.
+            
+            <motion.div variants={fadeUp} className="mt-20 p-8 bg-blue-50 rounded-2xl text-center border border-blue-100">
+              <p className="text-gray-700 italic max-w-3xl mx-auto">
+                "Our knowledge products and media engagements are designed to translate innovative ideas into tangible, 
+                impactful policies that address the root causes of societal problems."
               </p>
             </motion.div>
           </motion.div>

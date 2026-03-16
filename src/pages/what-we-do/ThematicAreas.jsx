@@ -69,7 +69,7 @@ export default function ThematicAreas() {
         className="pt-40 pb-28 bg-cover bg-center relative"
         style={{ backgroundImage: `url(/images/heroes/thematic-areas.jpg)` }}
       >
-        <div className="absolute inset-0 bg-black/80"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative max-w-6xl mx-auto px-6 text-white">
           <div className="flex items-center gap-3 text-blue-400 mb-4">
             <Globe2 className="w-6 h-6" />

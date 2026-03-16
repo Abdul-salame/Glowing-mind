@@ -18,7 +18,7 @@ export default function Identity() {
         className="relative h-[480px] bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url('/images/heroes/identity-hero.jpg')` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-blue-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-800/90 to-blue-900/60" />
         <div className="relative max-w-6xl mx-auto px-6">
           <motion.span 
             initial={{ opacity: 0 }}

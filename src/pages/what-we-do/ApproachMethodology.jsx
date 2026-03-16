@@ -58,7 +58,7 @@ export default function Approach() {
   return (
     <>
       
-      <section className="pt-40 pb-28 bg-cover bg-center relative text-white" style={{ backgroundImage: `url(/images/heroes/approach-hero.jpg)` }}>
+      <section className="pt-60 pb-28 bg-cover bg-center relative text-white" style={{ backgroundImage: `url(/images/heroes/approach-hero.jpg)` }}>
         <div className="absolute inset-0 bg-black/60" />
         <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} className="relative max-w-5xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Our Approach & Methodology</h1>

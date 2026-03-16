@@ -213,7 +213,7 @@ export default function GraduateEmployability() {
       {/* TESTIMONIALS SECTION  */}
       <section className="py-20 bg-slate-50 overflow-hidden">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-blue-900 mb-16">Alumni Success Stories</h2>
+          <h2 className="text-3xl font-bold text-center text-blue-900 mb-16">Alumni Testimonials</h2>
           
           <div className="grid md:grid-cols-2 gap-10">
             {/* Testimonial 1 */}
