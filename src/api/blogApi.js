@@ -10,6 +10,6 @@ export const getBlogs = async () => {
 
 // Get single blog
 export const getSingleBlog = async (id) => {
-  const res = await api.get(`/blog/blog/${id}`);
+  const res = await api.get(`/blog/${id}`);
   return res.data;
 };
