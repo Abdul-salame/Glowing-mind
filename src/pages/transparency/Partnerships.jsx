@@ -24,7 +24,7 @@ export default function Partnerships() {
         { name: "Startup Campus Nile", logo: "/images/logos/startup-campus-nile.jpeg" },
         { name: "University of Abuja SUG", logo: "/images/logos/uiabuja-sug.jpeg" },
         { name: "Skills Outside School Foundation", logo: "/images/logos/sosf.jpeg" },
-        { name: "Roadrunner", logo: "/images/logos/roadrunner.jpeg" },
+        { name: "Roadrunner", logo: "/images/logos/roadrunner.png" },
       ]
     },
     {
