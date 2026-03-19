@@ -63,7 +63,7 @@ export default function KnowledgeProducts() {
       <a href={item.link} target="_blank" rel="noopener noreferrer" className={linkClass}>
         {iconBox}
         <span className="font-medium flex items-center gap-2">
-          {item.name} <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+          {item.name} <ExternalLink size={14} className="opacity-0 group-hover:opacity-900 transition-opacity" />
         </span>
       </a>
     );
