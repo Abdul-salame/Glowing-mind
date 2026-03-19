@@ -6,55 +6,62 @@ import {
   Users, 
   FileText, 
   TrendingUp, 
-  CheckCircle2 
+  CheckCircle2,
+  Globe
 } from "lucide-react"; 
 import Footer from "../../components/layout/Footer";
 
-
+// RESTORED ALL 5 ORIGINAL PILLARS WITH UPDATED STATS
 const competencies = [
   {
     title: "Career Support Services",
     icon: <Briefcase className="w-8 h-8 text-blue-950" />,
     text: "We provide structured career guidance, employability training, mentorship, and job-readiness support that equips young people with relevant skills.",
-    stat: "10,000+ Youth Trained"
+    stat: "5,000+ Youth Trained"
   },
   {
     title: "Enterprise Support Services",
     icon: <Rocket className="w-8 h-8 text-blue-950" />,
     text: "We support youth-led enterprises through entrepreneurship training, market access, and advisory services for sustainable startups.",
-    stat: "500+ Startups Supported"
+    stat: "500+ Businesses Supported"
   },
   {
     title: "Community Engagement",
     icon: <Users className="w-8 h-8 text-blue-950" />,
     text: "We work closely with communities to co-create inclusive programmes and deliver context-responsive interventions.",
-    stat: "50+ Local Communities"
+    stat: "15,000+ Indirect Beneficiaries"
   },
   {
     title: "Policy Development",
     icon: <FileText className="w-8 h-8 text-blue-950" />,
     text: "We facilitate evidence-based policy research and advocacy to influence inclusive policies that integrate youth perspectives.",
-    stat: "12 Policy Papers Published"
+    stat: "30+ Strategic Partnerships"
   },
   {
     title: "Business Incubation",
     icon: <TrendingUp className="w-8 h-8 text-blue-950" />,
     text: "We design and deliver structured incubation and acceleration programmes that support MSMEs with investment readiness.",
-    stat: "$2M+ Seed Funding Raised"
+    stat: "65% Success Rate"
   }
 ];
 
-const impactStats = [
-  { label: "Jobs Created", value: "2,500+" },
-  { label: "Partner Organizations", value: "120+" },
-  { label: "Success Rate", value: "85%" },
-  { label: "Active Mentors", value: "300+" }
+// ALL 9 KEY IMPACT METRICS AS REQUESTED
+const impactMetrics = [
+  { label: "Youth Trained", value: "5,000+", desc: "Trained in essential employability and life skills." },
+  { label: "Alumni Network", value: "2,500+", desc: "Provided with mentorship, funding, and professional opportunities." },
+  { label: "Youth-Led Businesses", value: "500+", desc: "Supported through dedicated incubation and mentorship programs." },
+  { label: "Employment Rate", value: "65%", desc: "Graduates secured jobs or launched businesses within 6 months." },
+  { label: "Female Participation", value: "60%", desc: "Maintaining a strong 70% completion rate among women." },
+  { label: "Active Mentors", value: "50+", desc: "Providing guidance and professional support to participants." },
+  { label: "Strategic Partnerships", value: "30+", desc: "Established with NGOs, private sector, and international organizations." },
+  { label: "States Reached", value: "33", desc: "Active physical presence in 5 states, virtual reach in 33 states." },
+  { label: "Indirect Impact", value: "15,000+", desc: "Individuals benefiting through skills transfer and community engagement." }
 ];
 
 export default function CoreCompetencies() {
   return (
-    <div className="min-h-screen bg-blue-300">
-      
+    <div className="min-h-screen bg-white">
+      {/* HERO SECTION */}
       <section
         className="pt-40 pb-28 bg-cover bg-center relative text-white"
         style={{ backgroundImage: `url(/images/heroes/competencies-hero.jpg)` }}
@@ -75,9 +82,13 @@ export default function CoreCompetencies() {
         </motion.div>
       </section>
 
-      {/* COMPETENCIES GRID */}
-      <section className="py-24">
+      {/* PROGRAMMATIC PILLARS (ALL 5 RESTORED) */}
+      <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
+          <div className="mb-16 text-center">
+            <h2 className="text-3xl font-bold text-gray-900">Programmatic Pillars</h2>
+            <div className="w-20 h-1 bg-blue-600 mx-auto mt-4" />
+          </div>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -116,29 +127,33 @@ export default function CoreCompetencies() {
         </div>
       </section>
 
-    
-      <section className="py-20 bg-blue-900 text-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold">Our Measurable Impact</h2>
-            <p className="text-blue-200 mt-2">The scale of our commitment to youth empowerment.</p>
+      {/* KEY IMPACT METRICS*/}
+      <section className="py-24 bg-blue-950 text-white">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <div className="mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold">Key Impact Metrics</h2>
+            <div className="w-20 h-1 bg-blue-500 mx-auto mt-4" />
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {impactStats.map((stat, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+            {impactMetrics.map((metric, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
+                className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all"
               >
-                <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">
-                  {stat.value}
+                <div className="text-4xl font-extrabold text-blue-400 mb-2">
+                  {metric.value}
                 </div>
-                <div className="text-blue-300 font-medium uppercase tracking-wider text-sm">
-                  {stat.label}
+                <div className="text-lg font-bold text-white mb-2 leading-tight">
+                  {metric.label}
                 </div>
+                <p className="text-blue-200 text-sm leading-relaxed">
+                  {metric.desc}
+                </p>
               </motion.div>
             ))}
           </div>

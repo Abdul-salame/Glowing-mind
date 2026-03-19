@@ -14,7 +14,7 @@ export default function YoungClimateEntrepreneurs() {
       >
         <div className="absolute inset-0 bg-black/70" />
         <motion.div variants={fadeUp} initial="hidden" animate="show" className="relative max-w-5xl mx-auto text-center px-6">
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Young Climate Entrepreneurs Program</h1>
+          <h1 id="page-title" className="text-4xl md:text-5xl font-extrabold leading-tight">Young Climate Entrepreneurs Program</h1>
           <p className="mt-6 text-xl md:text-2xl text-green-50 max-w-3xl mx-auto">
             Empowering the next generation of green leaders through circular economy knowledge and sustainable innovation.
           </p>
@@ -22,6 +22,7 @@ export default function YoungClimateEntrepreneurs() {
       </section>
 
       {/* OVERVIEW SECTION */}
+      <main id="main-content" aria-labelledby="page-title">
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div 
@@ -167,7 +168,7 @@ export default function YoungClimateEntrepreneurs() {
         </motion.div>
       </section>
 
-      {/* WHY CLIMATE ACTION  */}
+      {/*  CLIMATE ACTION  */}
       <section className="py-20 bg-blue-900 text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-8">Closing the Climate Gap</h2>
@@ -188,57 +189,69 @@ export default function YoungClimateEntrepreneurs() {
         </div>
       </section>
 
-      {/* TESTIMONIALS SECTION */}
+      {/* TESTIMONIALS */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-blue-900 mb-4">Voices of Success</h2>
+            <h2 className="text-3xl font-bold text-blue-900 mb-4 tracking-tight">YCEP Alumni Reviews</h2>
             <div className="w-24 h-1 bg-green-500 mx-auto" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-10">
             {/* Testimonial 1 */}
-            <motion.div 
+            <motion.div
               variants={fadeUp}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
               className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 relative flex flex-col"
             >
-              <Quote className="absolute top-6 right-8 text-blue-50 w-12 h-12" />
-              <p className="text-gray-700 italic leading-relaxed mb-8 relative z-10 flex-grow">
-                "I recently completed Graduate Employability Program 4.0 from Glowing Minds Initiatives... Over the past five weeks, I have gained knowledge on self-discovery, personal branding, goal setting, time management, CV writing and cover letters. I am confident that these skills acquired will make me a better person in the job space. I hope to apply this knowledge and strategies to make myself a better person in the employability space."
-              </p>
-              <div className="border-t pt-6">
-                <h4 className="font-bold text-blue-900 uppercase">Imam Taofiq Ahmad</h4>
-                <p className="text-xs text-blue-600 font-semibold uppercase tracking-wider">
-                  Political Science Graduate, Usmanu Danfodio University, Sokoto
-                </p>
-              </div>
+              <Quote aria-hidden="true" className="absolute top-6 right-8 text-blue-50 w-12 h-12" />
+              <figure className="relative z-10 flex-grow">
+                <blockquote className="text-gray-700 italic leading-relaxed mb-8">
+                  <p>
+                    "I am one of the beneficiaries of the Young Climate Entrepreneurship Program. With the help of this program, I was able to get insight on how to curate a sustainable business. One of my favourite parts about this program is the weekly classes where we meet different climate enthusiasts where they teach us how to become better when it comes to climate issues."
+                  </p>
+                </blockquote>
+                <figcaption className="border-t pt-6">
+                  <h4 className="font-bold text-blue-900 uppercase">Fauziyyah Yusuf</h4>
+                  <p className="text-xs text-blue-600 font-semibold uppercase tracking-wider">YCEP 1.0 Alumni</p>
+                </figcaption>
+              </figure>
             </motion.div>
 
-            {/* Testimonial 2  */}
-            <motion.div 
+            {/* Testimonial 2 */}
+            <motion.div
               variants={fadeUp}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
               className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 relative flex flex-col"
             >
-              <Quote className="absolute top-6 right-8 text-blue-50 w-12 h-12" />
-              <p className="text-gray-700 italic leading-relaxed mb-8 relative z-10 flex-grow">
-                "My reason for applying for GEP 4.0 is to increase my chances of being employed. I learned a whole lot, but the things that stood out for me most were emotional intelligence and CV and cover letter writing. Mr. Abdulganiy emphasized the principles of building a powerful CV and resume. It's definitely going to benefit me and a whole lot of people job hunting presently."
-              </p>
-              <div className="border-t pt-6">
-                <h4 className="font-bold text-blue-900 uppercase">Anita Williams</h4>
-                <p className="text-xs text-blue-600 font-semibold uppercase tracking-wider">
-                  Portuguese and English Graduate, Lagos State University, Lagos
-                </p>
-              </div>
+              <Quote aria-hidden="true" className="absolute top-6 right-8 text-blue-50 w-12 h-12" />
+              <figure className="relative z-10 flex-grow space-y-4">
+                <blockquote className="text-gray-700 italic leading-relaxed mb-8 space-y-4">
+                  <p>
+                    "I'm forever grateful for the Youth Climate Employability Program 1.0. It ignited a spark within me, empowering me to turn my passion into business through mentorship, training, and networking."
+                  </p>
+                  <p>
+                    "I gained the confidence and skills to succeed in self-discovery, climate change in Nigeria, business planning, sustainable business model canvas, marketing (B2B processes and traditional processes), and sourcing for finance. This program is a game-changer for young entrepreneurs, providing a platform to unleash our potential and shape our futures."
+                  </p>
+                  <p>
+                    "Ever since I joined this program, I was able to launch my own brand, Prudent Innovations. May almighty God be with the facilitators and everyone."
+                  </p>
+                </blockquote>
+                <figcaption className="border-t pt-6">
+                  <h4 className="font-bold text-blue-900 uppercase">Tijani Mubarak Mashood</h4>
+                  <p className="text-xs text-blue-600 font-semibold uppercase tracking-wider">CEO of Prudent Innovations | Lagos State University Student | YCEP 1.0 ALUMNI</p>
+                </figcaption>
+              </figure>
             </motion.div>
-          </div>
+        </div>
         </div>
       </section>
+
+      </main>
 
       <Footer />
     </motion.div>
