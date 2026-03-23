@@ -67,9 +67,11 @@ export default function GMINews() {
   <motion.img
     variants={fadeUp}
     src="/images/impact/news.jpg"
-    className="h-full w-full object-cover"
+    /* object-[center_25%] focuses on the upper-middle area */
+    className="h-full w-full object-cover object-[center_25%]"
     alt="GMI in the News"
   />
+
 
   {/* Overlay */}
   <div className="absolute inset-0 bg-black/50" />

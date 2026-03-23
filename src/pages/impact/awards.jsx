@@ -33,9 +33,10 @@ export default function Awards() {
   <motion.img
     variants={fadeUp}
     src="/images/impact/awards.jpg"
-    className="h-full w-full object-cover"
+    className="h-full w-full object-cover object-bottom" 
     alt="GMI Awards and Recognition"
   />
+
 
   {/* Overlay */}
   <div className="absolute inset-0 bg-black/50" />

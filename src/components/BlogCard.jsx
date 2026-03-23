@@ -10,10 +10,9 @@ const BlogCard = ({ blog }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45 }}
       viewport={{ once: true }}
-      className="bg-blue-100 border border-gray-200 rounded-2xl overflow-hidden flex flex-col justify-between
-                 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all"
+      className="bg-blue-100 border rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-xl transition-all"
     >
-      {/* Blog Image */}
+      {/* Image */}
       {blog.image_url && (
         <img
           src={blog.image_url}
@@ -22,48 +21,42 @@ const BlogCard = ({ blog }) => {
         />
       )}
 
-      <div className="p-7 flex flex-col justify-between h-full">
+      <div className="p-6 flex flex-col justify-between h-full">
         <div>
           {/* Category */}
-          <p className="text-xs font-semibold uppercase tracking-wide text-blue-600 mb-3 flex items-center gap-1">
+          <p className="text-xs text-blue-600 flex items-center gap-1">
             <FaTag /> {blog.category || "General"}
           </p>
 
           {/* Title */}
-          <h3 className="text-xl font-semibold text-gray-900 leading-snug mb-4">
+          <h3 className="text-lg font-bold mt-2 mb-3">
             {blog.title}
           </h3>
 
           {/* Meta */}
-          <div className="flex flex-wrap gap-4 text-xs text-gray-500 mb-5">
-            <span className="flex items-center gap-1">
-              <FaUser /> {blog.author || "GMI Admin"}
-            </span>
-
-            <span className="flex items-center gap-1">
+          <div className="text-xs text-gray-500 flex gap-4 mb-3">
+            <span><FaUser /> {blog.author || "Admin"}</span>
+            <span>
               <FaCalendarAlt />
               {blog.createdAt
                 ? new Date(blog.createdAt).toLocaleDateString()
-                : "Date TBD"}
+                : "N/A"}
             </span>
-
-            <span className="flex items-center gap-1">
-              <FaClock /> 5 min read
-            </span>
+            <span><FaClock /> 5 min</span>
           </div>
 
           {/* Excerpt */}
-          <p className="text-sm text-gray-700 leading-relaxed line-clamp-3">
-            {blog.excerpt}
+          <p className="text-sm text-gray-700 line-clamp-3">
+            {blog.excerpt || "No description"}
           </p>
         </div>
 
-        {/* Read More Link */}
+        {/* Link */}
         <Link
           to={`/blog/${blog.id}`}
-          className="mt-6 text-sm font-semibold text-blue-600 hover:text-blue-800 transition"
+          className="mt-4 text-blue-600 font-semibold"
         >
-          Read article →
+          Read more →
         </Link>
       </div>
     </motion.article>
