@@ -1,66 +1,40 @@
-
 import { Link } from "react-router-dom";
-import { FaUser, FaCalendarAlt, FaClock, FaTag } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { getImageUrl } from "../api/api";
+import { ArrowRight } from "lucide-react";
 
-const BlogCard = ({ blog }) => {
+export default function BlogCard({ post }) {
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.45 }}
-      viewport={{ once: true }}
-      className="bg-blue-100 border rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-xl transition-all"
-    >
-      {/* Image */}
-      {blog.image_url && (
-        <img
-          src={blog.image_url}
-          alt={blog.title}
-          className="w-full h-48 object-cover"
+    <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col h-full">
+      {/* Image with Category Badge */}
+      <div className="relative h-52 overflow-hidden">
+        <img 
+          src={getImageUrl(post.media)} 
+          alt={post.title}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
-      )}
-
-      <div className="p-6 flex flex-col justify-between h-full">
-        <div>
-          {/* Category */}
-          <p className="text-xs text-blue-600 flex items-center gap-1">
-            <FaTag /> {blog.category || "General"}
-          </p>
-
-          {/* Title */}
-          <h3 className="text-lg font-bold mt-2 mb-3">
-            {blog.title}
-          </h3>
-
-          {/* Meta */}
-          <div className="text-xs text-gray-500 flex gap-4 mb-3">
-            <span><FaUser /> {blog.author || "Admin"}</span>
-            <span>
-              <FaCalendarAlt />
-              {blog.createdAt
-                ? new Date(blog.createdAt).toLocaleDateString()
-                : "N/A"}
-            </span>
-            <span><FaClock /> 5 min</span>
-          </div>
-
-          {/* Excerpt */}
-          <p className="text-sm text-gray-700 line-clamp-3">
-            {blog.excerpt || "No description"}
-          </p>
+        <div className="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+          {post.category}
         </div>
+      </div>
 
-        {/* Link */}
-        <Link
-          to={`/blog/${blog.id}`}
-          className="mt-4 text-blue-600 font-semibold"
+      {/* Content */}
+      <div className="p-6 flex flex-col flex-grow text-black">
+        <h3 className="text-xl font-bold mb-3 line-clamp-2 group-hover:text-blue-600 transition-colors">
+          {post.title}
+        </h3>
+        <p className="text-gray-600 text-sm line-clamp-3 mb-6 flex-grow">
+          {post.excerpt || "Join Glowing Minds Initiatives as we explore impact and community growth..."}
+        </p>
+
+        {/* The "Read More" Arrow */}
+        <Link 
+          to={`/blog/${post.slug || post.id}`} 
+          className="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group/btn"
         >
-          Read more →
+          Read More 
+          <ArrowRight size={18} className="transform group-hover/btn:translate-x-2 transition-transform" />
         </Link>
       </div>
-    </motion.article>
+    </div>
   );
-};
-
-export default BlogCard;
+}
