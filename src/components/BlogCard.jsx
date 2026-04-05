@@ -8,7 +8,7 @@ export default function BlogCard({ post }) {
       {/* Image with Category Badge */}
       <div className="relative h-52 overflow-hidden">
         <img 
-          src={getImageUrl(post.media)} 
+          src={getImageUrl(post.img_url || post.media)} 
           alt={post.title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
@@ -26,7 +26,7 @@ export default function BlogCard({ post }) {
           {post.excerpt || "Join Glowing Minds Initiatives as we explore impact and community growth..."}
         </p>
 
-        {/* The "Read More" Arrow */}
+        {/* Read More Arrow */}
         <Link 
           to={`/blog/${post.slug || post.id}`} 
           className="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group/btn"

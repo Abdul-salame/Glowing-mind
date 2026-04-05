@@ -34,7 +34,7 @@ export default function BlogPost() {
   return (
     <div className="bg-white min-h-screen pb-20 text-black">
        {/* ... same UI code as before ... */}
-       <img src={getImageUrl(post.media)} alt={post.title} className="w-full rounded-2xl" />
+       <img src={getImageUrl(post.img_url || post.media)} alt={post.title} className="w-full rounded-2xl" />
        <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </div>
   );
