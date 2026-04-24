@@ -25,6 +25,8 @@ const partners = [
 ];
 
 export default function PartnersMarquee() {
+  const uniquePartners = [...new Set(partners)];
+
   return (
     <section className="py-20 bg-gray-50 overflow-hidden">
       <div className="text-center mb-12">
@@ -38,7 +40,7 @@ export default function PartnersMarquee() {
 
       <div className="relative w-full overflow-hidden">
         <div className="flex w-max animate-marquee gap-16">
-          {[...partners, ...partners].map((logo, index) => (
+          {[...uniquePartners, ...uniquePartners].map((logo, index) => (
             <div key={index} className="flex items-center">
               <img
                 src={logo}
