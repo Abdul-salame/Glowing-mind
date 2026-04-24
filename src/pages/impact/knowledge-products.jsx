@@ -35,11 +35,16 @@ export default function KnowledgeProducts() {
     { name: "FFC Conference Reports", link: "/impact/events", internal: true, icon: <Users className="w-5 h-5" /> },
 
     { 
-      name: "Policy Brief: Youth Development", 
-      link: "/reports/GMI-POLICY-BRIEF.pdf", 
+      name: "Policy Brief: Youth Employability", 
+      link: "/reports/Aligning Skills with Opportunity.pdf", 
       internal: false, 
       icon: <FileText className="w-5 h-5" /> 
     },
+    { 
+    name: "Policy Brief: Civic Engagement", 
+    link: "/reports/Reclaiming the Civic Public Square.pdf", 
+    icon: <FileText className="w-5 h-5" /> 
+  },
   ];
 
   const newspaperFeatures = [
