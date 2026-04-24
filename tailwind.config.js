@@ -14,7 +14,7 @@ export default {
       },
 
       animation: {
-        marquee: "marquee 50s linear infinite",
+        marquee: "marquee 45s linear infinite",
         fadeInUp: "fadeInUp 1s ease-out forwards",
         fadeInLeft: "fadeInLeft 1s ease-out forwards",
         fadeInRight: "fadeInRight 1s ease-out forwards",
