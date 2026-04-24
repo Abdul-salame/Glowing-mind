@@ -21,7 +21,10 @@ const partners = [
   "/images/logos/nnngo.jpeg",
   "/images/logos/nuj-niger-state.jpeg",
   "/images/logos/nyff.png",
-  "/images/logos/rmrdc.jpeg",
+  "/images/logos/sosf.jpeg",
+  "/images/logos/startup-campus-nile.jpeg",
+  "/images/logos/uiabuja-sug.jpeg",
+  "/images/logos/window-on-america.jpeg",
 ];
 
 export default function PartnersMarquee() {
@@ -39,7 +42,7 @@ export default function PartnersMarquee() {
       </div>
 
       <div className="relative w-full overflow-hidden">
-        <div className="flex w-max animate-marquee gap-16">
+        <div className="flex w-max animate-marquee gap-16 hover:[animation-play-state:paused]">
           {[...uniquePartners, ...uniquePartners].map((logo, index) => (
             <div key={index} className="flex items-center">
               <img

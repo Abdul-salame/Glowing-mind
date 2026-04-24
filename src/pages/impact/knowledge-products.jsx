@@ -12,22 +12,36 @@ import {
   Music, 
   Newspaper,
   ExternalLink,
-  Globe
+  Globe,
+  FileText // Added for Policy Briefs
 } from "lucide-react"; 
 
 import Footer from "../../components/layout/Footer";
 
 export default function KnowledgeProducts() {
   
-  
+  // Updated with 2025 Annual Report and Policy Brief placeholders
   const institutionalReports = [
+    { 
+      name: "2025 Annual Impact Report", 
+      link: "/reports/GMIHD 2025 ANNUAL REPORT.pdf", 
+      internal: false, 
+      icon: <BarChart className="w-5 h-5" /> 
+    },
+    
     { name: "2024 Annual Impact Report", link: "/reports/GMIHD 2024 ANNUAL REPORT.pdf", internal: false, icon: <BarChart className="w-5 h-5" /> },
     { name: "2023 Annual Impact Report", link: "/reports/GMIHD 2023 ANNUAL REPORT.pdf", internal: false, icon: <BarChart className="w-5 h-5" /> },
     { name: "2022 Annual Impact Report", link: "/reports/GMIHD 2022 ANNUAL REPORT.pdf", internal: false, icon: <BarChart className="w-5 h-5" /> },
     { name: "FFC Conference Reports", link: "/impact/events", internal: true, icon: <Users className="w-5 h-5" /> },
+
+    { 
+      name: "Policy Brief: Youth Development", 
+      link: "/reports/GMI-POLICY-BRIEF.pdf", 
+      internal: false, 
+      icon: <FileText className="w-5 h-5" /> 
+    },
   ];
 
-  
   const newspaperFeatures = [
     { name: "Guardian: NGO trains Niger youths on policy advocacy", link: "https://guardian.ng/news/ngo-trains-niger-youths-on-policy-development-advocacy/", internal: false },
     { name: "Nigeria Daily Post: Journalists training on fake news", link: "https://nigeriadailypost.com.ng/2024/11/14/niger-journalists-get-training-on-curbing-fake-news-others/", internal: false },
@@ -36,10 +50,9 @@ export default function KnowledgeProducts() {
     { name: "The Eagle Eye: News Details", link: "https://www.theeagleeye.com.ng/news-details.php?nid=199", internal: false },
   ];
 
-  
   const multimediaFeatures = [
     { name: "GMI TV (YouTube Channel)", link: "https://youtu.be/Y1gsdZDESjQ?si=tU6EQYA6qmiovxeo", internal: false, icon: <Youtube className="w-5 h-5" /> },
-    { name: "GMI Podcast (Spotify)", link: "https://open.spotify.com/episode/1qErvprjZ34feJTDbIkFJ4?si=OmqxBREHT2eZMGA3s7fWBw ", internal: false, icon: <Music className="w-5 h-5" /> },
+    { name: "GMI Podcast (Spotify)", link: "https://open.spotify.com/show/your-link", internal: false, icon: <Music className="w-5 h-5" /> },
     { name: "Facebook Video Feature", link: "https://www.facebook.com/share/v/1EPwpDzKbL/", internal: false, icon: <Globe className="w-5 h-5" /> }
   ];
 
@@ -63,7 +76,7 @@ export default function KnowledgeProducts() {
       <a href={item.link} target="_blank" rel="noopener noreferrer" className={linkClass}>
         {iconBox}
         <span className="font-medium flex items-center gap-2">
-          {item.name} <ExternalLink size={14} className="opacity-0 group-hover:opacity-900 transition-opacity" />
+          {item.name} <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
         </span>
       </a>
     );
@@ -85,10 +98,10 @@ export default function KnowledgeProducts() {
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-12">
-              {/*  Annual Reports */}
+              {/* Reports & Briefs */}
               <motion.div variants={fadeUp} className="space-y-6">
                 <h2 className="text-xl font-bold text-primary flex items-center gap-2 border-b pb-4">
-                  <FileCheck className="text-orange-500" /> Annual Reports
+                  <FileCheck className="text-orange-500" /> Publications & Reports
                 </h2>
                 <ul className="space-y-5">
                   {institutionalReports.map((item, index) => (
@@ -97,7 +110,7 @@ export default function KnowledgeProducts() {
                 </ul>
               </motion.div>
 
-              {/*  Print & Digital  */}
+              {/* Print & Digital */}
               <motion.div variants={fadeUp} className="space-y-6">
                 <h2 className="text-xl font-bold text-primary flex items-center gap-2 border-b pb-4">
                   <BookOpen className="text-orange-500" /> Print & Digital Press
@@ -109,7 +122,7 @@ export default function KnowledgeProducts() {
                 </ul>
               </motion.div>
 
-              {/* TV & Radio  */}
+              {/* Multimedia */}
               <motion.div variants={fadeUp} className="space-y-6">
                 <h2 className="text-xl font-bold text-primary flex items-center gap-2 border-b pb-4">
                   <Youtube className="text-orange-500" /> TV & Radio Features
@@ -122,7 +135,6 @@ export default function KnowledgeProducts() {
               </motion.div>
             </div>
 
-            
             <motion.div variants={fadeUp} className="mt-20 p-8 bg-blue-50 rounded-2xl text-center border border-blue-100">
               <p className="text-gray-700 italic max-w-3xl mx-auto">
                 "Our knowledge products and media engagements are designed to translate innovative ideas into tangible, 

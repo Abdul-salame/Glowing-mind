@@ -1,36 +1,24 @@
 
 import { useEffect, useRef, useState } from "react";
 
-
+const logos = [
+  "/images/news/Guardian.png",
+  "/images/news/punch.png",
+  "/images/news/Vanguard.png",
+  "/images/news/businessday.png",
+  "/images/news/TheCable.png",
+  "/images/news/unesco.png",
+  "/images/news/Leadership.png",
+  "/images/news/MIT.png",
+  "/images/news/BLUE.png",
+  "/images/news/PULSE.png",
+];
 
 export default function NewsMentions() {
-  const logos = [
-    "/images/news/Guardian.png",
-    "/images/news/punch.png",
-    "/images/news/Vanguard.png",
-    "/images/news/businessday.png",
-    "/images/news/TheCable.png",
-    "/images/news/unesco.png",
-    "/images/news/Leadership.png",
-    "/images/news/MIT.png",
-    "/images/news/BLUE.png",
-    "/images/news/PULSE.png",
-    "/images/news/Guardian.png",
-    "/images/news/punch.png",
-    "/images/news/Vanguard.png",
-    "/images/news/businessday.png",
-    "/images/news/TheCable.png",
-    "/images/news/unesco.png",
-    "/images/news/Leadership.png",
-    "/images/news/MIT.png",
-    "/images/news/BLUE.png",
-    "/images/news/PULSE.png",
-  ];
-
+  const uniqueLogos = [...new Set(logos)];
   const sectionRef = useRef(null);
   const [visible, setVisible] = useState(false);
 
-  
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -46,33 +34,29 @@ export default function NewsMentions() {
   return (
     <section
       ref={sectionRef}
-      className={`py-14 bg-gray-50 overflow-hidden transition-all duration-1000
+      className={`py-14 bg-gray-50 overflow-hidden transition-all duration-100
         ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
     >
-      <div className="max-w-7xl mx-auto px-4">
-        
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-blue-950 mb-10">
+      <div className="text-center mb-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-blue-950">
           GMI in the News
         </h2>
+      </div>
 
-        {/* Marquee */}
-        <div className="relative w-full overflow-hidden">
-          <div
-            className="
-              flex items-center gap-20 whitespace-nowrap
-              animate-marquee
-              hover:[animation-play-state:paused]
-            "
-          >
-            {logos.map((logo, index) => (
+      {/* Marquee Container */}
+      <div className="relative w-full overflow-hidden">
+       
+        
+        <div className="flex w-max animate-marquee gap-16 md:gap-20 hover:[animation-play-state:paused]">
+          {[...uniqueLogos, ...uniqueLogos].map((logo, index) => (
+            <div key={index} className="flex items-center">
               <img
-                key={index}
                 src={logo}
                 alt="Media Logo"
-                className="h-14 md:h-20 object-contain"
+                className="h-12 md:h-16 object-contain  hover:grayscale-0 transition-all duration-300"
               />
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
