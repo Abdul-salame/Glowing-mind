@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { page, fadeUp, stagger } from "../../animations/variants";
 import { Building2, Landmark, Users2, Handshake } from "lucide-react";
+import { Link } from "react-router-dom"; // Added for the CTA link
 import Footer from "../../components/layout/Footer";
 
 export default function Partnerships() {
@@ -25,16 +26,17 @@ export default function Partnerships() {
         { name: "University of Abuja SUG", logo: "/images/logos/uiabuja-sug.jpeg" },
         { name: "Skills Outside School Foundation", logo: "/images/logos/sosf.jpeg" },
         { name: "Roadrunner", logo: "/images/logos/roadrunner.png" },
+        // MOVED FROM GOVERNMENT TO PARTNERS
+        { name: "Aluta Continual", logo: "/images/logos/aluta-continual.jpeg" },
+        { name: "Nigerian Union of Journalists, Niger State Chapter.", logo: "/images/logos/nuj-niger-state.jpeg" },
+        { name: "Window on America", logo: "/images/logos/window-on-america.jpeg" },
+        { name: "ECOCYKLE FOUNDATION", logo: "/images/logos/ecocycle.jpeg" },
       ]
     },
     {
       title: "Government",
       icon: <Landmark className="w-6 h-6" />,
       partners: [
-        { name: "Aluta Continual", logo: "/images/logos/aluta-continual.jpeg" },
-        { name: "Nigerian Union of Journalists, Niger State Chapter.", logo: "/images/logos/nuj-niger-state.jpeg" },
-        { name: "Window on America", logo: "/images/logos/window-on-america.jpeg" },
-        { name: "ECOCYKLE FOUNDATION", logo: "/images/logos/ecocycle.jpeg" },
         { name: "RMRDC", logo: "/images/logos/rmrdc.jpeg" },
         { name: "Niger State Ministry of Youth", logo: "/images/logos/niger-state-youth.jpeg" },
       ]
@@ -65,7 +67,6 @@ export default function Partnerships() {
             <div className="space-y-16">
               {categories.map((cat, idx) => (
                 <motion.div key={idx} variants={fadeUp} className="w-full">
-                  {/* Header Section - Counter Removed */}
                   <div className="flex items-center gap-4 mb-8 border-b border-gray-200 pb-4">
                     <div className="p-3 bg-blue-50 text-primary rounded-xl">
                       {cat.icon}
@@ -75,7 +76,6 @@ export default function Partnerships() {
                     </h2>
                   </div>
                   
-                  {/* Logo Grid */}
                   <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
                     {cat.partners.map((partner, pIdx) => (
                       <div 
@@ -100,16 +100,18 @@ export default function Partnerships() {
               ))}
             </div>
 
-            {/* Partnership CTA */}
+            {/* Partnership CTA - Updated with Link to Contact page */}
             <motion.div variants={fadeUp} className="bg-primary text-white p-12 rounded-3xl mt-24 text-center">
               <h3 className="text-3xl font-bold mb-6">Partner With Us</h3>
               <p className="opacity-90 mb-10 max-w-2xl mx-auto text-lg">
                 Join our network of donors, government agencies, and strategic partners 
                 working to empower African youth.
               </p>
-              <button className="bg-orange-500 text-white font-bold py-4 px-10 rounded-full hover:bg-orange-600 transition-all shadow-xl">
-                Start a Collaboration
-              </button>
+              <Link to="/contact">
+                <button className="bg-orange-500 text-white font-bold py-4 px-10 rounded-full hover:bg-orange-600 transition-all shadow-xl">
+                  Start a Collaboration
+                </button>
+              </Link>
             </motion.div>
 
           </motion.div>

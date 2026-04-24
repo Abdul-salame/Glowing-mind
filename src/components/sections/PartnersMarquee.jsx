@@ -7,6 +7,21 @@ const partners = [
   "/images/partners/partner5.jpg",
   "/images/partners/partner6.jpg",
   "/images/partners/partner7.jpg",
+  "/images/logos/witness.jpeg",
+  "/images/logos/roadrunner.png",
+  "/images/logos/corestream.jpeg",
+  "/images/logos/ecocycle.jpeg",
+  "/images/logos/eso.jpeg",
+  "/images/logos/aluta-continual.jpeg",
+  "/images/logos/catalyst-now-nigerian-chapter.jpeg",
+  "/images/logos/ctin-west-africa.jpeg",
+  "/images/logos/gge.jpeg",
+  "/images/logos/gidan-yanci.jpeg",
+  "/images/logos/niger-state-youth.jpeg",
+  "/images/logos/nnngo.jpeg",
+  "/images/logos/nuj-niger-state.jpeg",
+  "/images/logos/nyff.png",
+  "/images/logos/rmrdc.jpeg",
 ];
 
 export default function PartnersMarquee() {

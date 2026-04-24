@@ -5,15 +5,26 @@ import { useEffect, useRef, useState } from "react";
 
 export default function NewsMentions() {
   const logos = [
-    "/images/news/guardian.png",
+    "/images/news/Guardian.png",
     "/images/news/punch.png",
-    "/images/news/vanguard.png",
+    "/images/news/Vanguard.png",
     "/images/news/businessday.png",
-    "/images/news/thecable.png",
+    "/images/news/TheCable.png",
     "/images/news/unesco.png",
-    "/images/news/leadership.png",
-    "/images/news/mit.png",
-    "/images/news/blue.png",
+    "/images/news/Leadership.png",
+    "/images/news/MIT.png",
+    "/images/news/BLUE.png",
+    "/images/news/PULSE.png",
+    "/images/news/Guardian.png",
+    "/images/news/punch.png",
+    "/images/news/Vanguard.png",
+    "/images/news/businessday.png",
+    "/images/news/TheCable.png",
+    "/images/news/unesco.png",
+    "/images/news/Leadership.png",
+    "/images/news/MIT.png",
+    "/images/news/BLUE.png",
+    "/images/news/PULSE.png",
   ];
 
   const sectionRef = useRef(null);
