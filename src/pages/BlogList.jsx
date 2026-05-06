@@ -12,7 +12,7 @@ const BlogList = () => {
     const fetchBlogs = async () => {
       try {
         const data = await getBlogs();
-        // Ensure we are setting the array correctly
+        
         setBlogs(Array.isArray(data) ? data : []);
       } catch (err) {
         console.error("Error fetching blogs:", err);
@@ -37,7 +37,7 @@ const BlogList = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      // Changed from bg-blue-300 to a cleaner gray for a professional look
+      
       className="bg-gray-50 py-20 min-h-screen"
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -58,7 +58,7 @@ const BlogList = () => {
         ) : (
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {blogs.map((blog) => (
-              // Changed 'blog={blog}' to 'post={blog}' to match the BlogCard prop name
+             
               <BlogCard key={blog.id || blog._id} post={blog} />
             ))}
           </div>

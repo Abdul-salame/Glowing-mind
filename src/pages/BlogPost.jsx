@@ -4,14 +4,14 @@ import { useParams, Link } from "react-router-dom";
 import api, { getImageUrl } from "../api/api";
 
 export default function BlogPost() {
-  const { slug } = useParams(); // This matches the :slug in your App.jsx routes
+  const { slug } = useParams(); 
   const [post, setPost] = useState(null);
-  const [error, setError] = useState(null); // Added error state
+  const [error, setError] = useState(null); 
 
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        // Try fetching by slug first
+        
         const data = await api.get(`/blog/${slug}`);
         setPost(data);
       } catch (err) {
@@ -33,7 +33,7 @@ export default function BlogPost() {
 
   return (
     <div className="bg-white min-h-screen pb-20 text-black">
-       {/* ... same UI code as before ... */}
+       
        <img src={getImageUrl(post.img_url || post.media)} alt={post.title} className="w-full rounded-2xl" />
        <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </div>
