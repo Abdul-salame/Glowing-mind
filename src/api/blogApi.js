@@ -1,5 +1,5 @@
 
-// public/src/api/blogApi.js
+  // public/src/api/blogApi.js
 import api from "./api";
 
 // Get all blogs
@@ -8,8 +8,8 @@ export const getBlogs = async () => {
   return res;
 };
 
-// Get single blog
-export const getSingleBlog = async (id) => {
-  const res = await api.get(`/blog/${id}`);
+// Get single blog by slug
+export const getSingleBlog = async (slug) => {
+  const res = await api.get(`/blog/${slug}`);
   return res;
 };

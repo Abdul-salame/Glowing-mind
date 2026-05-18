@@ -1,26 +1,26 @@
 
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import api, { getImageUrl } from "../api/api";
+import { getImageUrl } from "../api/api";
+import { getSingleBlog } from "../api/blogApi"; // ← import this
 
 export default function BlogPost() {
-  const { slug, id } = useParams(); 
-  const postId = slug || id;
+  const { slug } = useParams(); // ← only need slug, drop id
   const [post, setPost] = useState(null);
-  const [error, setError] = useState(null); 
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const data = await api.get(`/blog/${postId}`);
+        const data = await getSingleBlog(slug); // ← use the proper function
         setPost(data);
       } catch (err) {
         console.error("Fetch Error:", err.response?.data || err.message);
         setError("Could not find this post.");
       }
     };
-    if (postId) fetchPost();
-  }, [postId]);
+    if (slug) fetchPost();
+  }, [slug]);
 
   if (error) return (
     <div className="min-h-screen flex flex-col items-center justify-center text-black">
@@ -29,13 +29,16 @@ export default function BlogPost() {
     </div>
   );
 
-  if (!post) return <div className="min-h-screen flex items-center justify-center text-black">Loading...</div>;
+  if (!post) return (
+    <div className="min-h-screen flex items-center justify-center text-black">
+      Loading...
+    </div>
+  );
 
   return (
     <div className="bg-white min-h-screen pb-20 text-black">
-       
-       <img src={getImageUrl(post.img_url || post.media)} alt={post.title} className="w-full rounded-2xl" />
-       <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <img src={getImageUrl(post.img_url || post.media)} alt={post.title} className="w-full rounded-2xl" />
+      <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </div>
   );
 }

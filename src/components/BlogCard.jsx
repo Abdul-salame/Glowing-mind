@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { getImageUrl } from "../api/api";
 import { ArrowRight } from "lucide-react";
@@ -28,7 +29,7 @@ export default function BlogCard({ post }) {
 
         {/* Read More Arrow */}
         <Link 
-          to={`/blog/${post.slug || post.id}`} 
+          to={`/blog/${post.slug}`} 
           className="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group/btn"
         >
           Read More 
