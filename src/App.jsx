@@ -80,7 +80,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blog" element={<BlogList />} />
-        <Route path="/blog/:id" element={<BlogPost />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/career" element={<CareerPage />} />
 
         {/* ABOUT */}

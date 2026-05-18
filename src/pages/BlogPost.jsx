@@ -4,23 +4,23 @@ import { useParams, Link } from "react-router-dom";
 import api, { getImageUrl } from "../api/api";
 
 export default function BlogPost() {
-  const { slug } = useParams(); 
+  const { slug, id } = useParams(); 
+  const postId = slug || id;
   const [post, setPost] = useState(null);
   const [error, setError] = useState(null); 
 
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        
-        const data = await api.get(`/blog/${slug}`);
+        const data = await api.get(`/blog/${postId}`);
         setPost(data);
       } catch (err) {
         console.error("Fetch Error:", err.response?.data || err.message);
         setError("Could not find this post.");
       }
     };
-    fetchPost();
-  }, [slug]);
+    if (postId) fetchPost();
+  }, [postId]);
 
   if (error) return (
     <div className="min-h-screen flex flex-col items-center justify-center text-black">
