@@ -2,17 +2,19 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getImageUrl } from "../api/api";
-import { getSingleBlog } from "../api/blogApi"; // ← import this
+import { getSingleBlog } from "../api/blogApi";
 
 export default function BlogPost() {
-  const { slug } = useParams(); // ← only need slug, drop id
+  const { slug } = useParams();
   const [post, setPost] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const data = await getSingleBlog(slug); // ← use the proper function
+        console.log("Fetching slug:", slug); // 👈 check slug value
+        const data = await getSingleBlog(slug);
+        console.log("Post data:", data); // 👈 check response
         setPost(data);
       } catch (err) {
         console.error("Fetch Error:", err.response?.data || err.message);
